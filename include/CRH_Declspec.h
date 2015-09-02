@@ -50,8 +50,8 @@ namespace crunchy
         #define DECLSPEC_NAMESPACE_BEGIN namespace declspec{ /**< LLVM namespace declarator */
         #define DECLSPEC_NAMESPACE_END }                     /**< LLVM namespace end */
 
-        #define __DECLSPEC_INTERNAL_BEGIN
-        #define __DECLSPEC_INTERNAL_END
+        #define __DECLSPEC_INTERNAL_BEGIN /**< Define an internal declspec location beginning */
+        #define __DECLSPEC_INTERNAL_END   /**< Define an internal declspec location end */
 
         /**
          * \brief Struct for holding architecture locks
