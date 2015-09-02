@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eflag_5fpage_5ft',['EFLAG_PAGE_T',['../namespacecrunchy.html#aae55d30a37cf91c7ece1e1bd5362b884',1,'crunchy']]]
+  ['default_5fcrn',['default_crn',['../structcrunchy_1_1crn.html#af6e0614d6a09fa22b503c55937e974aa',1,'crunchy::crn']]]
 ];

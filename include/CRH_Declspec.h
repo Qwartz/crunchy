@@ -53,6 +53,15 @@ namespace crunchy
         #define __DECLSPEC_INTERNAL_END
 
         /**
+         * \brief Struct for holding architecture locks
+         */
+        typedef struct __DECLSPEC_ARCHL
+        {
+            uint32_t archl_has_spin;       /**< Arch Lock has explicit spin */
+            uint32_t returns_forward_decl; /**< Returns a forward declaration */
+        } decl_t, *pdecl_t;
+        
+        /**
          * \brief If running an internal API Process
          */
         #ifdef _INTERNAL_API_PROC

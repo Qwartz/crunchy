@@ -127,32 +127,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_c_r_h___declspec_8h.html#adc3cb3f3b786a8613c7cdaa1a5e75191">   52</a></span>&#160;<span class="preprocessor">        #define __DECLSPEC_INTERNAL_BEGIN</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_c_r_h___declspec_8h.html#acc5cd9ea057f2857f8faf4d6e666174b">   53</a></span>&#160;<span class="preprocessor">        #define __DECLSPEC_INTERNAL_END</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        #ifdef _INTERNAL_API_PROC</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">        #   define  _MAX_ALLOC_TABLE  32 </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        #   define  _MAX_ALLOC_STREAM 10 </span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">        __DECLSPEC_INTERNAL</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> spec_overload</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            (</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> spec_ver,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> ptp_cmd[]</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">        #endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="_c_r_h___declspec_8h.html#add2c9e5146b4eb6fdda70423049d29a4">__DECLSPEC_INTERNAL</a></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">overload_concurrent_process</a></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">   86</a></span>&#160;            (</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            uint64_t overload_id,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> overload_cmd[]</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            ){</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html">   58</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html">__DECLSPEC_ARCHL</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#aadc3174237edfc7511f0b8bd94fde0ba">   60</a></span>&#160;            uint32_t <a class="code" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#aadc3174237edfc7511f0b8bd94fde0ba">archl_has_spin</a>;       </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#a73a2d868629fed82ad40089b1a7066d4">   61</a></span>&#160;            uint32_t <a class="code" href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#a73a2d868629fed82ad40089b1a7066d4">returns_forward_decl</a>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        } <a class="code" href="namespacecrunchy_1_1declarator.html#a0f9bbabe1552349f0ee0ae228ed30bb2">decl_t</a>, *<a class="code" href="namespacecrunchy_1_1declarator.html#a518adbd030268ca7f676cfe5c5ee7624">pdecl_t</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        #ifdef _INTERNAL_API_PROC</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">        #   define  _MAX_ALLOC_TABLE  32 </span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">        #   define  _MAX_ALLOC_STREAM 10 </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        __DECLSPEC_INTERNAL</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">void</span> spec_overload</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            (</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> spec_ver,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> ptp_cmd[]</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="_c_r_h___declspec_8h.html#add2c9e5146b4eb6fdda70423049d29a4">__DECLSPEC_INTERNAL</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">overload_concurrent_process</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">   95</a></span>&#160;            (</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            uint64_t overload_id,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> overload_cmd[]</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            ){</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="ttc" id="namespacecrunchy_html"><div class="ttname"><a href="namespacecrunchy.html">crunchy</a></div><div class="ttdoc">Main Crunchylib Namespace. </div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:22</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacecrunchy_1_1declarator_html_a0f9bbabe1552349f0ee0ae228ed30bb2"><div class="ttname"><a href="namespacecrunchy_1_1declarator.html#a0f9bbabe1552349f0ee0ae228ed30bb2">crunchy::declarator::decl_t</a></div><div class="ttdeci">struct crunchy::declarator::__DECLSPEC_ARCHL decl_t</div><div class="ttdoc">Struct for holding architecture locks. </div></div>
+<div class="ttc" id="namespacecrunchy_1_1declarator_html_a518adbd030268ca7f676cfe5c5ee7624"><div class="ttname"><a href="namespacecrunchy_1_1declarator.html#a518adbd030268ca7f676cfe5c5ee7624">crunchy::declarator::pdecl_t</a></div><div class="ttdeci">struct crunchy::declarator::__DECLSPEC_ARCHL * pdecl_t</div></div>
+<div class="ttc" id="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l_html"><div class="ttname"><a href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html">crunchy::declarator::__DECLSPEC_ARCHL</a></div><div class="ttdoc">Struct for holding architecture locks. </div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:58</div></div>
 <div class="ttc" id="_c_r_h___declspec_8h_html_add2c9e5146b4eb6fdda70423049d29a4"><div class="ttname"><a href="_c_r_h___declspec_8h.html#add2c9e5146b4eb6fdda70423049d29a4">__DECLSPEC_INTERNAL</a></div><div class="ttdeci">#define __DECLSPEC_INTERNAL</div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:40</div></div>
+<div class="ttc" id="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l_html_aadc3174237edfc7511f0b8bd94fde0ba"><div class="ttname"><a href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#aadc3174237edfc7511f0b8bd94fde0ba">crunchy::declarator::__DECLSPEC_ARCHL::archl_has_spin</a></div><div class="ttdeci">uint32_t archl_has_spin</div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:60</div></div>
 <div class="ttc" id="classcrunchy_1_1declarator_1_1specs_1_1chspec_html"><div class="ttname"><a href="classcrunchy_1_1declarator_1_1specs_1_1chspec.html">crunchy::declarator::specs::chspec</a></div><div class="ttdoc">MAIN CRUNCHY ALLOCATOR. </div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:38</div></div>
-<div class="ttc" id="namespacecrunchy_1_1declarator_html_a99b90638be455e5c536be8e8fd1fc535"><div class="ttname"><a href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">crunchy::declarator::overload_concurrent_process</a></div><div class="ttdeci">__DECLSPEC_INTERNAL void overload_concurrent_process(uint64_t overload_id, const char overload_cmd[])</div><div class="ttdoc">If running an internal API Process. </div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:86</div></div>
+<div class="ttc" id="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l_html_a73a2d868629fed82ad40089b1a7066d4"><div class="ttname"><a href="structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#a73a2d868629fed82ad40089b1a7066d4">crunchy::declarator::__DECLSPEC_ARCHL::returns_forward_decl</a></div><div class="ttdeci">uint32_t returns_forward_decl</div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:61</div></div>
+<div class="ttc" id="namespacecrunchy_1_1declarator_html_a99b90638be455e5c536be8e8fd1fc535"><div class="ttname"><a href="namespacecrunchy_1_1declarator.html#a99b90638be455e5c536be8e8fd1fc535">crunchy::declarator::overload_concurrent_process</a></div><div class="ttdeci">__DECLSPEC_INTERNAL void overload_concurrent_process(uint64_t overload_id, const char overload_cmd[])</div><div class="ttdoc">If running an internal API Process. </div><div class="ttdef"><b>Definition:</b> CRH_Declspec.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
