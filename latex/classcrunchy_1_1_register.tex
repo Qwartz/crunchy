@@ -1,0 +1,200 @@
+\hypertarget{classcrunchy_1_1_register}{}\section{crunchy\+:\+:Register Class Reference}
+\label{classcrunchy_1_1_register}\index{crunchy\+::\+Register@{crunchy\+::\+Register}}
+
+
+Class for registering object components and putting them in a hashtable.  
+
+
+
+
+{\ttfamily \#include $<$C\+R\+H\+\_\+\+Temp\+Var\+Data.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcrunchy_1_1_register_a763cad20437e64d7e9d5558308c68419}{Register} (int register\+Size, std\+::string register\+Name)
+\begin{DoxyCompactList}\small\item\em Main component registry function. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcrunchy_1_1_register_aca2c03eb24beba0b762db96f5471299c}{$\sim$\+Register} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\hyperlink{classcrunchy_1_1_register}{Register} $\ast$ \hyperlink{classcrunchy_1_1_register_a79c811f0a0c0150b2bf12788963e1012}{promise} (std\+::string promise\+\_\+me, bool has\+Strict\+Promise, int objects\+To\+Promise)
+\begin{DoxyCompactList}\small\item\em This promises that the currently registered component will periodically report back to the server. \end{DoxyCompactList}\item 
+void \hyperlink{classcrunchy_1_1_register_a3cc81983d4be4f35dc219dda5b890624}{runt} (\hyperlink{structtmp__dt}{tmp\+\_\+dt} $\ast$tmpd,...)
+\begin{DoxyCompactList}\small\item\em runt (Runtime. Unified. Node. Tester), this will test and parse components on a \char`\"{}block\char`\"{} basis \end{DoxyCompactList}\item 
+B\+O\+O\+L \hyperlink{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}{register\+\_\+component} (bool has\+U\+I\+D, bool has\+Signed\+U\+I\+D, D\+W\+O\+R\+D key\+Size\+U\+I\+D)
+\begin{DoxyCompactList}\small\item\em Main registry function for this file, this generates a default U\+I\+D (if none is specified) \end{DoxyCompactList}\item 
+B\+O\+O\+L \hyperlink{classcrunchy_1_1_register_a0169350a094eb27bfa9a64733f2de197}{deregister\+\_\+component} (bool signed\+U\+I\+D, D\+W\+O\+R\+D key\+Len, std\+::string path=\hyperlink{_c_r_h___temp_var_data_8h_a7ab10fbd11f547292657ef7866c446e6}{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H})
+\begin{DoxyCompactList}\small\item\em Deregisters component based upon component U\+I\+D. \end{DoxyCompactList}\item 
+D\+W\+O\+R\+D \hyperlink{classcrunchy_1_1_register_ad3cbb294cf16181e609fc9a0900d62ea}{check\+\_\+temp\+\_\+crc} (D\+W\+O\+R\+D crc\+\_\+sign, std\+::string crc\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for registering object components and putting them in a hashtable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcrunchy_1_1_register_a763cad20437e64d7e9d5558308c68419}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!Register@{Register}}
+\index{Register@{Register}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{Register(int register\+Size, std\+::string register\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}crunchy\+::\+Register\+::\+Register (
+\begin{DoxyParamCaption}
+\item[{int}]{register\+Size, }
+\item[{std\+::string}]{register\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcrunchy_1_1_register_a763cad20437e64d7e9d5558308c68419}
+
+
+Main component registry function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em register\+Size} & -\/ Default size of the registry file \\
+\hline
+{\em register\+Name} & -\/ Name of the default registery file \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcrunchy_1_1_register_aca2c03eb24beba0b762db96f5471299c}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!````~Register@{$\sim$\+Register}}
+\index{````~Register@{$\sim$\+Register}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{$\sim$\+Register()}]{\setlength{\rightskip}{0pt plus 5cm}virtual crunchy\+::\+Register\+::$\sim$\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classcrunchy_1_1_register_aca2c03eb24beba0b762db96f5471299c}
+
+
+Deconstructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcrunchy_1_1_register_ad3cbb294cf16181e609fc9a0900d62ea}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!check\+\_\+temp\+\_\+crc@{check\+\_\+temp\+\_\+crc}}
+\index{check\+\_\+temp\+\_\+crc@{check\+\_\+temp\+\_\+crc}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{check\+\_\+temp\+\_\+crc(\+D\+W\+O\+R\+D crc\+\_\+sign, std\+::string crc\+\_\+p)}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+R\+D crunchy\+::\+Register\+::check\+\_\+temp\+\_\+crc (
+\begin{DoxyParamCaption}
+\item[{D\+W\+O\+R\+D}]{crc\+\_\+sign, }
+\item[{std\+::string}]{crc\+\_\+p}
+\end{DoxyParamCaption}
+)}\label{classcrunchy_1_1_register_ad3cbb294cf16181e609fc9a0900d62ea}
+
+\begin{DoxyParams}{Parameters}
+{\em crc\+\_\+sign} & -\/ C\+R\+C key \\
+\hline
+{\em crc\+\_\+p} & -\/ C\+R\+C paraform\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+crc\+\_\+sign 
+\end{DoxyReturn}
+\hypertarget{classcrunchy_1_1_register_a0169350a094eb27bfa9a64733f2de197}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!deregister\+\_\+component@{deregister\+\_\+component}}
+\index{deregister\+\_\+component@{deregister\+\_\+component}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{deregister\+\_\+component(bool signed\+U\+I\+D, D\+W\+O\+R\+D key\+Len, std\+::string path=\+T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L crunchy\+::\+Register\+::deregister\+\_\+component (
+\begin{DoxyParamCaption}
+\item[{bool}]{signed\+U\+I\+D, }
+\item[{D\+W\+O\+R\+D}]{key\+Len, }
+\item[{std\+::string}]{path = {\ttfamily {\bf T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H}}}
+\end{DoxyParamCaption}
+)}\label{classcrunchy_1_1_register_a0169350a094eb27bfa9a64733f2de197}
+
+
+Deregisters component based upon component U\+I\+D. 
+
+This will check if component is currently active or running, if T\+R\+U\+E; will throw error.
+
+\begin{DoxyAttention}{Attention}
+If component was registered using a \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}, this cannot deregister. If any other components use \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D} it will deregister all of them.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em signed\+U\+I\+D} & -\/ has signed U\+I\+D \\
+\hline
+{\em key\+Len} & -\/ Key length \\
+\hline
+{\em path} & -\/ Grabs default tempfile path from global define\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if component successfully deregistered. F\+A\+L\+S\+E if component couldn\textquotesingle{}t deregister 
+\end{DoxyReturn}
+\hypertarget{classcrunchy_1_1_register_a79c811f0a0c0150b2bf12788963e1012}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!promise@{promise}}
+\index{promise@{promise}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{promise(std\+::string promise\+\_\+me, bool has\+Strict\+Promise, int objects\+To\+Promise)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Register}$\ast$ crunchy\+::\+Register\+::promise (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{promise\+\_\+me, }
+\item[{bool}]{has\+Strict\+Promise, }
+\item[{int}]{objects\+To\+Promise}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classcrunchy_1_1_register_a79c811f0a0c0150b2bf12788963e1012}
+
+
+This promises that the currently registered component will periodically report back to the server. 
+
+This can prevent versioning or runtime mismatches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em promise\+\_\+me} & -\/ Promise string (based upon command context) \\
+\hline
+{\em has\+Strict\+Promise} & -\/ Uses strict promise set based upon sets in \char`\"{}\+Strict.\+h\char`\"{} \\
+\hline
+{\em objects\+To\+Promise} & -\/ Max number of objects to promise\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+\hypertarget{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!register\+\_\+component@{register\+\_\+component}}
+\index{register\+\_\+component@{register\+\_\+component}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{register\+\_\+component(bool has\+U\+I\+D, bool has\+Signed\+U\+I\+D, D\+W\+O\+R\+D key\+Size\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L crunchy\+::\+Register\+::register\+\_\+component (
+\begin{DoxyParamCaption}
+\item[{bool}]{has\+U\+I\+D, }
+\item[{bool}]{has\+Signed\+U\+I\+D, }
+\item[{D\+W\+O\+R\+D}]{key\+Size\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}
+
+
+Main registry function for this file, this generates a default U\+I\+D (if none is specified) 
+
+It checks for signed or unsigned U\+I\+D\textquotesingle{}s and can generate based off of the key\+Size\+U\+I\+D
+
+For default U\+I\+D signature see\+: \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}
+
+
+\begin{DoxyParams}{Parameters}
+{\em has\+U\+I\+D} & -\/ T\+R\+U\+E if component already has U\+I\+D F\+A\+L\+S\+E if component doesn\textquotesingle{}t and a U\+I\+D will be assigned \\
+\hline
+{\em has\+Signed\+U\+I\+D} & -\/ T\+R\+U\+E if component has registered U\+I\+D F\+A\+L\+S\+E if doesn\textquotesingle{}t have a registered U\+I\+D, will assign registered U\+I\+D \\
+\hline
+{\em key\+Size\+U\+I\+D} & -\/ Keysize for U\+I\+D\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if component successfully registered F\+A\+L\+S\+E if component couldn\textquotesingle{}t register 
+\end{DoxyReturn}
+\hypertarget{classcrunchy_1_1_register_a3cc81983d4be4f35dc219dda5b890624}{}\index{crunchy\+::\+Register@{crunchy\+::\+Register}!runt@{runt}}
+\index{runt@{runt}!crunchy\+::\+Register@{crunchy\+::\+Register}}
+\subsubsection[{runt(tmp\+\_\+dt $\ast$tmpd,...)}]{\setlength{\rightskip}{0pt plus 5cm}void crunchy\+::\+Register\+::runt (
+\begin{DoxyParamCaption}
+\item[{{\bf tmp\+\_\+dt} $\ast$}]{tmpd, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{classcrunchy_1_1_register_a3cc81983d4be4f35dc219dda5b890624}
+
+
+runt (Runtime. Unified. Node. Tester), this will test and parse components on a \char`\"{}block\char`\"{} basis 
+
+This can help with performing tests on a file-\/to-\/file basis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tmpd} & -\/ Reference accessor to tmp\+\_\+dt\+\_\+t$<$ln\+: 21$>$ \\
+\hline
+{\em ...} & -\/ Takes multiple parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_c_r_h___temp_var_data_8h}{C\+R\+H\+\_\+\+Temp\+Var\+Data.\+h}\end{DoxyCompactItemize}

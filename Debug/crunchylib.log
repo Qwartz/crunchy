@@ -1,0 +1,19 @@
+﻿Build started 9/1/2015 19:24:07.
+     1>Project "C:\Users\Corbin\Desktop\crunchylib\crunchylib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt cpp\Declspec.cpp cpp\crunchylib.cpp
+         crunchylib.cpp
+     1>c:\users\corbin\desktop\crunchylib\include\crh_declspec.h(114): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\corbin\desktop\crunchylib\include\crh_declspec.h(123): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Declspec.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Corbin\Desktop\crunchylib\Debug\crunchylib.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Corbin\Desktop\crunchylib\Debug\crunchylib.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Corbin\Desktop\crunchylib\Debug\crunchylib.lib" /MACHINE:X86 Debug\crunchylib.obj
+         Debug\Declspec.obj
+         crunchylib.vcxproj -> C:\Users\Corbin\Desktop\crunchylib\Debug\crunchylib.exe
+     1>Done Building Project "C:\Users\Corbin\Desktop\crunchylib\crunchylib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.22

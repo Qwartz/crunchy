@@ -1,0 +1,94 @@
+\hypertarget{_c_r_h___portability_8h}{}\section{include/\+C\+R\+H\+\_\+\+Portability.h File Reference}
+\label{_c_r_h___portability_8h}\index{include/\+C\+R\+H\+\_\+\+Portability.\+h@{include/\+C\+R\+H\+\_\+\+Portability.\+h}}
+
+
+Portable code for cross-\/compiling and cross-\/\+O\+S usage.  
+
+
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}C\+R\+H\+\_\+\+Signatures.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcrunchy_1_1_u_n_i_x___portable_1_1_e_n_v___d_a_t_a}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::\+E\+N\+V\+\_\+\+D\+A\+T\+A}
+\begin{DoxyCompactList}\small\item\em This holds environment sizes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecrunchy}{crunchy}
+\begin{DoxyCompactList}\small\item\em Main Crunchylib Namespace. \end{DoxyCompactList}\item 
+ \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable}
+\begin{DoxyCompactList}\small\item\em U\+N\+I\+X/\+Linux portable code. \end{DoxyCompactList}\item 
+ \hyperlink{namespacecrunchy_1_1_w_i_n___portable}{crunchy\+::\+W\+I\+N\+\_\+\+Portable}
+\begin{DoxyCompactList}\small\item\em Windows portable code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_r_h___portability_8h_a7d5d8c5f8871bd888db09806403443f2}{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}~namespace U\+N\+I\+X\+\_\+\+Portable \{
+\begin{DoxyCompactList}\small\item\em L\+L\+V\+M/\+Clang friendly B\+E\+G\+I\+N \& E\+N\+D U\+N\+I\+X\+\_\+\+Portable namespace. \end{DoxyCompactList}\item 
+\#define \hyperlink{_c_r_h___portability_8h_a339c1ca26286bd2d65a6ff74e129b527}{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}~\}
+\item 
+\#define \hyperlink{_c_r_h___portability_8h_a471b776da68907766c2e0f53bfd3f6a9}{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}~namespace W\+I\+N\+\_\+\+Portable \{
+\begin{DoxyCompactList}\small\item\em L\+L\+V\+M/\+Clang friendly B\+E\+G\+I\+N \& E\+N\+D W\+I\+N\+\_\+\+Portable namespace. \end{DoxyCompactList}\item 
+\#define \hyperlink{_c_r_h___portability_8h_a59b0cc40b4d00e22a564b36661cfe60c}{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}~\}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcrunchy_1_1_u_n_i_x___portable_1_1_e_n_v___d_a_t_a}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::\+E\+N\+V\+\_\+\+D\+A\+T\+A} \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable_a200439e6a525bf357a766278278cda8f}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::\+E\+N\+V\+\_\+\+D\+A\+T\+A\+\_\+\+T}
+\begin{DoxyCompactList}\small\item\em This holds environment sizes. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcrunchy_1_1_u_n_i_x___portable_1_1_e_n_v___d_a_t_a}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::\+E\+N\+V\+\_\+\+D\+A\+T\+A} $\ast$ \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable_a3e10341fe78682a3fd657e631e2659dc}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::\+P\+E\+N\+V\+\_\+\+D\+A\+T\+A\+\_\+\+T}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable_a783c5685096669bb59980444a7c8b37c}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::create\+\_\+shell\+\_\+env} (E\+N\+V\+\_\+\+D\+A\+T\+A\+\_\+\+T $\ast$shell\+\_\+data) \hyperlink{_c_r_h___signatures_8h_a4cf7ff8aeb847b5144d37bb0f2818387}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}
+\begin{DoxyCompactList}\small\item\em Creates empty shell environment and initializes a thread for it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable_a84e6dc3bfb38f92ffc2bb374b3819604}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::has\+U\+N\+I\+X\+Env} = true
+\item 
+bool \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable_a1df8cb012e6cbb395a83d8d965e55ae6}{crunchy\+::\+U\+N\+I\+X\+\_\+\+Portable\+::has\+W\+I\+N\+Env} = false
+\item 
+bool \hyperlink{namespacecrunchy_1_1_w_i_n___portable_a13f5917ac7e1b16856ddc1e3fb9ecf77}{crunchy\+::\+W\+I\+N\+\_\+\+Portable\+::has\+W\+I\+N\+Env} = true
+\item 
+bool \hyperlink{namespacecrunchy_1_1_w_i_n___portable_a7e8302941397585df62313986ab8f50a}{crunchy\+::\+W\+I\+N\+\_\+\+Portable\+::has\+U\+N\+I\+X\+Env} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Portable code for cross-\/compiling and cross-\/\+O\+S usage. 
+
+\begin{DoxyAuthor}{Author}
+Corbin Matschull 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Aug 31. 2015 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_c_r_h___portability_8h_a7d5d8c5f8871bd888db09806403443f2}{}\index{C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}!U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N@{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}}
+\index{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N@{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}!C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}}
+\subsubsection[{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N~namespace U\+N\+I\+X\+\_\+\+Portable \{}\label{_c_r_h___portability_8h_a7d5d8c5f8871bd888db09806403443f2}
+
+
+L\+L\+V\+M/\+Clang friendly B\+E\+G\+I\+N \& E\+N\+D U\+N\+I\+X\+\_\+\+Portable namespace. 
+
+\hypertarget{_c_r_h___portability_8h_a339c1ca26286bd2d65a6ff74e129b527}{}\index{C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}!U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D@{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}}
+\index{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D@{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}!C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}}
+\subsubsection[{U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+I\+X\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D~\}}\label{_c_r_h___portability_8h_a339c1ca26286bd2d65a6ff74e129b527}
+\hypertarget{_c_r_h___portability_8h_a471b776da68907766c2e0f53bfd3f6a9}{}\index{C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}!W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N@{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}}
+\index{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N@{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}!C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}}
+\subsubsection[{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+I\+N~namespace W\+I\+N\+\_\+\+Portable \{}\label{_c_r_h___portability_8h_a471b776da68907766c2e0f53bfd3f6a9}
+
+
+L\+L\+V\+M/\+Clang friendly B\+E\+G\+I\+N \& E\+N\+D W\+I\+N\+\_\+\+Portable namespace. 
+
+\hypertarget{_c_r_h___portability_8h_a59b0cc40b4d00e22a564b36661cfe60c}{}\index{C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}!W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D@{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}}
+\index{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D@{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}!C\+R\+H\+\_\+\+Portability.\+h@{C\+R\+H\+\_\+\+Portability.\+h}}
+\subsubsection[{W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+N\+D~\}}\label{_c_r_h___portability_8h_a59b0cc40b4d00e22a564b36661cfe60c}
