@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ms5_5fhash',['ms5_hash',['../structcrunchy_1_1ms5__hash.html',1,'crunchy']]]
+  ['ioexception',['IOException',['../classcrunchy_1_1_i_oexception_1_1_i_o_exception.html',1,'crunchy::IOexception']]]
 ];

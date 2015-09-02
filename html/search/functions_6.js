@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['promise',['promise',['../classcrunchy_1_1_register.html#a79c811f0a0c0150b2bf12788963e1012',1,'crunchy::Register']]]
+  ['overload_5fconcurrent_5fprocess',['overload_concurrent_process',['../namespacecrunchy_1_1declarator.html#a183d3307eeea9d174913148d0d7a7070',1,'crunchy::declarator']]]
 ];

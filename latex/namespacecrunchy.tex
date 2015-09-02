@@ -2,7 +2,7 @@
 \label{namespacecrunchy}\index{crunchy@{crunchy}}
 
 
-Main Crunchylib Namespace.  
+Main Crunchy Namespace.  
 
 
 \subsection*{Namespaces}
@@ -10,6 +10,8 @@ Main Crunchylib Namespace.
 \item 
  \hyperlink{namespacecrunchy_1_1declarator}{declarator}
 \begin{DoxyCompactList}\small\item\em Declarators and defines. \end{DoxyCompactList}\item 
+ \hyperlink{namespacecrunchy_1_1_i_oexception}{I\+Oexception}
+\begin{DoxyCompactList}\small\item\em IO specific error namespace. \end{DoxyCompactList}\item 
  \hyperlink{namespacecrunchy_1_1paging}{paging}
 \begin{DoxyCompactList}\small\item\em Page allocation and memory management. \end{DoxyCompactList}\item 
  \hyperlink{namespacecrunchy_1_1_u_n_i_x___portable}{U\+N\+I\+X\+\_\+\+Portable}
@@ -19,12 +21,12 @@ Main Crunchylib Namespace.
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}
+struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}
 \begin{DoxyCompactList}\small\item\em Content keys for keeping content strings in handy containers. \end{DoxyCompactList}\item 
 struct \hyperlink{structcrunchy_1_1crn}{crn}
-\begin{DoxyCompactList}\small\item\em C\+R\+N (Constant Return Numbers), use these for returning constant value I\+D\textquotesingle{}s. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em C\+RN (Constant Return Numbers), use these for returning constant value ID\textquotesingle{}s. \end{DoxyCompactList}\item 
 struct \hyperlink{structcrunchy_1_1has__prp__int}{has\+\_\+prp\+\_\+int}
-\begin{DoxyCompactList}\small\item\em P\+R\+P (Public Return Prototypes), typenames for P\+R\+P keys. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em P\+RP (Public Return Prototypes), typenames for P\+RP keys. \end{DoxyCompactList}\item 
 struct \hyperlink{structcrunchy_1_1ms5__hash}{ms5\+\_\+hash}
 \begin{DoxyCompactList}\small\item\em Primary ms5 hashtable data memebers. \end{DoxyCompactList}\item 
 struct \hyperlink{structcrunchy_1_1nset__t}{nset\+\_\+t}
@@ -44,39 +46,39 @@ class \hyperlink{classcrunchy_1_1_virtual}{Virtual}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} \hyperlink{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}{N\+S\+E\+T\+\_\+\+T}
+typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} \hyperlink{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}{N\+S\+E\+T\+\_\+T}
 \begin{DoxyCompactList}\small\item\em No set types structure. This stores set types into a handy variable to use when dealing with page files. \end{DoxyCompactList}\item 
-typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} $\ast$ \hyperlink{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}{P\+\_\+\+N\+S\+E\+T\+\_\+\+T}
+typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} $\ast$ \hyperlink{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}{P\+\_\+\+N\+S\+E\+T\+\_\+T}
 \item 
 typedef struct \hyperlink{structcrunchy_1_1ms5__hash}{crunchy\+::ms5\+\_\+hash} \hyperlink{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}{ms5\+\_\+hash\+\_\+t}
 \begin{DoxyCompactList}\small\item\em Primary ms5 hashtable data memebers. \end{DoxyCompactList}\item 
-typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S} \hyperlink{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}
+typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS} \hyperlink{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}
 \begin{DoxyCompactList}\small\item\em Content keys for keeping content strings in handy containers. \end{DoxyCompactList}\item 
-typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S} $\ast$ \hyperlink{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}
+typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS} $\ast$ \hyperlink{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}{E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P} \{ \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}{N\+U\+L\+L\+\_\+\+C\+R\+M\+P} = 0x0, 
-\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}{P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P}, 
-\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K}, 
-\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V}
- \}\begin{DoxyCompactList}\small\item\em Holds E\+F\+L\+A\+G data to send to C\+R\+C checkers. \end{DoxyCompactList}
+enum \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}{E\+F\+L\+A\+G\+\_\+\+C\+R\+MP} \{ \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}{N\+U\+L\+L\+\_\+\+C\+R\+MP} = 0x0, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}{P\+A\+R\+S\+E\+\_\+\+C\+R\+MP}, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK}, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV}
+ \}\begin{DoxyCompactList}\small\item\em Holds E\+F\+L\+AG data to send to C\+RC checkers. \end{DoxyCompactList}
 \item 
-enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E} \{ \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M}, 
-\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D}, 
-\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E}, 
-\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E}
- \}\begin{DoxyCompactList}\small\item\em Holds paging data for E\+F\+L\+A\+G commands. \end{DoxyCompactList}
+enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{E\+F\+L\+A\+G\+\_\+\+P\+A\+GE} \{ \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE}
+ \}\begin{DoxyCompactList}\small\item\em Holds paging data for E\+F\+L\+AG commands. \end{DoxyCompactList}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{namespacecrunchy_a840f3455f9eabfd92188118014675544}{crn} (\hyperlink{_c_r_h___int_8h_a02452c2544aa4d6f059141c39a58cf46}{C\+R\+U\+N\+C\+H\+Y\+\_\+\+U\+I\+N\+T} $\ast$, const \hyperlink{_c_r_h___int_8h_a1beede3d0e4b7c6006283411ec1ccc9d}{C\+R\+U\+N\+C\+H\+Y\+\_\+\+S\+T\+R\+I\+N\+G} crn\+I\+D)
+void \hyperlink{namespacecrunchy_a840f3455f9eabfd92188118014675544}{crn} (\hyperlink{_c_r_h___int_8h_a02452c2544aa4d6f059141c39a58cf46}{C\+R\+U\+N\+C\+H\+Y\+\_\+\+U\+I\+NT} $\ast$, const \hyperlink{_c_r_h___int_8h_a1beede3d0e4b7c6006283411ec1ccc9d}{C\+R\+U\+N\+C\+H\+Y\+\_\+\+S\+T\+R\+I\+NG} crn\+ID)
 \item 
 void \hyperlink{namespacecrunchy_a4d23f9d6b97af85e97e61a8e5ef55348}{create\+C\+R\+N\+Data} ()
 \item 
-D\+W\+O\+R\+D \hyperlink{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}{has\+C\+R\+N\+Instance} ()
+D\+W\+O\+RD \hyperlink{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}{has\+C\+R\+N\+Instance} ()
 \item 
 {\footnotesize template$<$typename T , unsigned S$>$ }\\unsigned \hyperlink{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}{arraysize} (const T(\&v)\mbox{[}S\mbox{]})
 \item 
@@ -89,38 +91,40 @@ struct \hyperlink{structcrunchy_1_1has__prp__int}{crunchy\+::has\+\_\+prp\+\_\+i
 \item 
 struct \hyperlink{structcrunchy_1_1type__form}{crunchy\+::type\+\_\+form} \hyperlink{namespacecrunchy_a485eab134ce624b5c2330b623928030f}{type\+\_\+form\+\_\+t}
 \item 
-static enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E} \hyperlink{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T}
+static enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+GE} \hyperlink{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Main Crunchy Namespace. 
+
 Main Crunchylib Namespace. 
 
 \subsection{Typedef Documentation}
-\hypertarget{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}{}\index{crunchy@{crunchy}!\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P@{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}}
-\index{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P@{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}!crunchy@{crunchy}}
-\subsubsection[{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S} $\ast$ {\bf crunchy\+::\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}}\label{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}
-\hypertarget{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}{}\index{crunchy@{crunchy}!C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S@{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}}
-\index{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S@{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}!crunchy@{crunchy}}
-\subsubsection[{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}  {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}}\label{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}
+\index{crunchy@{crunchy}!\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P@{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P}}
+\index{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P@{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P}!crunchy@{crunchy}}
+\subsubsection[{\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS} $\ast$ {\bf crunchy\+::\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+P}}\hypertarget{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}{}\label{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}
+\index{crunchy@{crunchy}!C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS@{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}}
+\index{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS@{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}!crunchy@{crunchy}}
+\subsubsection[{C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}  {\bf crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+YS}}\hypertarget{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}{}\label{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}
 
 
 Content keys for keeping content strings in handy containers. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em C\+O\+N\+T\+E\+N\+T\+\_\+\+V\+O\+I\+D} & -\/ Sends key dump to the content trunk incase of void instances happening. \\
+{\em C\+O\+N\+T\+E\+N\+T\+\_\+\+V\+O\+ID} & -\/ Sends key dump to the content trunk incase of void instances happening. \\
 \hline
-{\em K\+E\+Y\+\_\+\+P\+R\+N\+G} & -\/ P\+R\+N\+G for the key dump \\
+{\em K\+E\+Y\+\_\+\+P\+R\+NG} & -\/ P\+R\+NG for the key dump \\
 \hline
-{\em P\+R\+O\+M\+I\+S\+E\+\_\+\+K\+E\+Y} & -\/ Generates a promise key, use with \hyperlink{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}{Register\+::register\+\_\+component()} \\
+{\em P\+R\+O\+M\+I\+S\+E\+\_\+\+K\+EY} & -\/ Generates a promise key, use with \hyperlink{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}{Register\+::register\+\_\+component()} \\
 \hline
 {\em content\+\_\+box} & -\/ Key trunk \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}{}\index{crunchy@{crunchy}!ms5\+\_\+hash\+\_\+t@{ms5\+\_\+hash\+\_\+t}}
+\index{crunchy@{crunchy}!ms5\+\_\+hash\+\_\+t@{ms5\+\_\+hash\+\_\+t}}
 \index{ms5\+\_\+hash\+\_\+t@{ms5\+\_\+hash\+\_\+t}!crunchy@{crunchy}}
-\subsubsection[{ms5\+\_\+hash\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::ms5\+\_\+hash}  {\bf crunchy\+::ms5\+\_\+hash\+\_\+t}}\label{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}
+\subsubsection[{ms5\+\_\+hash\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::ms5\+\_\+hash}  {\bf crunchy\+::ms5\+\_\+hash\+\_\+t}}\hypertarget{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}{}\label{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}
 
 
 Primary ms5 hashtable data memebers. 
@@ -132,9 +136,9 @@ Primary ms5 hashtable data memebers.
 {\em ms5\+\_\+usablename} & -\/ Name assigned to ms5\+\_\+portablekey \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}{}\index{crunchy@{crunchy}!N\+S\+E\+T\+\_\+\+T@{N\+S\+E\+T\+\_\+\+T}}
-\index{N\+S\+E\+T\+\_\+\+T@{N\+S\+E\+T\+\_\+\+T}!crunchy@{crunchy}}
-\subsubsection[{N\+S\+E\+T\+\_\+\+T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::nset\+\_\+t} {\bf crunchy\+::\+N\+S\+E\+T\+\_\+\+T}}\label{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}
+\index{crunchy@{crunchy}!N\+S\+E\+T\+\_\+T@{N\+S\+E\+T\+\_\+T}}
+\index{N\+S\+E\+T\+\_\+T@{N\+S\+E\+T\+\_\+T}!crunchy@{crunchy}}
+\subsubsection[{N\+S\+E\+T\+\_\+T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::nset\+\_\+t} {\bf crunchy\+::\+N\+S\+E\+T\+\_\+T}}\hypertarget{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}{}\label{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}
 
 
 No set types structure. This stores set types into a handy variable to use when dealing with page files. 
@@ -150,87 +154,87 @@ No set types structure. This stores set types into a handy variable to use when 
 {\em nset\+\_\+large\+\_\+page} & -\/ Use this when creating or defining large page files \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}{}\index{crunchy@{crunchy}!P\+\_\+\+N\+S\+E\+T\+\_\+\+T@{P\+\_\+\+N\+S\+E\+T\+\_\+\+T}}
-\index{P\+\_\+\+N\+S\+E\+T\+\_\+\+T@{P\+\_\+\+N\+S\+E\+T\+\_\+\+T}!crunchy@{crunchy}}
-\subsubsection[{P\+\_\+\+N\+S\+E\+T\+\_\+\+T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::nset\+\_\+t} $\ast$ {\bf crunchy\+::\+P\+\_\+\+N\+S\+E\+T\+\_\+\+T}}\label{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}
+\index{crunchy@{crunchy}!P\+\_\+\+N\+S\+E\+T\+\_\+T@{P\+\_\+\+N\+S\+E\+T\+\_\+T}}
+\index{P\+\_\+\+N\+S\+E\+T\+\_\+T@{P\+\_\+\+N\+S\+E\+T\+\_\+T}!crunchy@{crunchy}}
+\subsubsection[{P\+\_\+\+N\+S\+E\+T\+\_\+T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf crunchy\+::nset\+\_\+t} $\ast$ {\bf crunchy\+::\+P\+\_\+\+N\+S\+E\+T\+\_\+T}}\hypertarget{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}{}\label{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}
 
 
 \subsection{Enumeration Type Documentation}
-\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}{}\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P@{E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P}}
-\index{E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P@{E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P}!crunchy@{crunchy}}
-\subsubsection[{E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P}}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}
+\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+C\+R\+MP@{E\+F\+L\+A\+G\+\_\+\+C\+R\+MP}}
+\index{E\+F\+L\+A\+G\+\_\+\+C\+R\+MP@{E\+F\+L\+A\+G\+\_\+\+C\+R\+MP}!crunchy@{crunchy}}
+\subsubsection[{E\+F\+L\+A\+G\+\_\+\+C\+R\+MP}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+C\+R\+MP}}\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}{}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}
 
 
-Holds E\+F\+L\+A\+G data to send to C\+R\+C checkers. 
+Holds E\+F\+L\+AG data to send to C\+RC checkers. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em N\+U\+L\+L\+\_\+\+C\+R\+M\+P} & -\/ Has null C\+R\+M\+P value \\
+{\em N\+U\+L\+L\+\_\+\+C\+R\+MP} & -\/ Has null C\+R\+MP value \\
 \hline
-{\em P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P} & -\/ Parses C\+R\+C C\+R\+M\+P value \\
+{\em P\+A\+R\+S\+E\+\_\+\+C\+R\+MP} & -\/ Parses C\+RC C\+R\+MP value \\
 \hline
-{\em \+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K} & -\/ Throws if E\+F\+L\+A\+G has already had check \\
+{\em \+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK} & -\/ Throws if E\+F\+L\+AG has already had check \\
 \hline
-{\em \+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V} & -\/ Stems out E\+F\+L\+A\+G environment into R\+A\+M \\
+{\em \+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV} & -\/ Stems out E\+F\+L\+AG environment into R\+AM \\
 \hline
 \end{DoxyParams}
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{N\+U\+L\+L\+\_\+\+C\+R\+M\+P@{N\+U\+L\+L\+\_\+\+C\+R\+M\+P}!crunchy@{crunchy}}\index{crunchy@{crunchy}!N\+U\+L\+L\+\_\+\+C\+R\+M\+P@{N\+U\+L\+L\+\_\+\+C\+R\+M\+P}}\item[{\em 
-\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}{}N\+U\+L\+L\+\_\+\+C\+R\+M\+P\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}
-}]\index{P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P@{P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P@{P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P}}\item[{\em 
-\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}{}P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}
-}]\index{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K@{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K}!crunchy@{crunchy}}\index{crunchy@{crunchy}!\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K@{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K}}\item[{\em 
-\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}{}\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}
-}]\index{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V@{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V}!crunchy@{crunchy}}\index{crunchy@{crunchy}!\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V@{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V}}\item[{\em 
-\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}{}\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}
+\index{N\+U\+L\+L\+\_\+\+C\+R\+MP@{N\+U\+L\+L\+\_\+\+C\+R\+MP}!crunchy@{crunchy}}\index{crunchy@{crunchy}!N\+U\+L\+L\+\_\+\+C\+R\+MP@{N\+U\+L\+L\+\_\+\+C\+R\+MP}}\item[{\em 
+N\+U\+L\+L\+\_\+\+C\+R\+MP\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}{}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}
+}]\index{P\+A\+R\+S\+E\+\_\+\+C\+R\+MP@{P\+A\+R\+S\+E\+\_\+\+C\+R\+MP}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+R\+S\+E\+\_\+\+C\+R\+MP@{P\+A\+R\+S\+E\+\_\+\+C\+R\+MP}}\item[{\em 
+P\+A\+R\+S\+E\+\_\+\+C\+R\+MP\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}{}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}
+}]\index{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK@{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK}!crunchy@{crunchy}}\index{crunchy@{crunchy}!\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK@{\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK}}\item[{\em 
+\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+CK\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}{}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}
+}]\index{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV@{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV}!crunchy@{crunchy}}\index{crunchy@{crunchy}!\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV@{\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV}}\item[{\em 
+\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+NV\hypertarget{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}{}\label{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}
 }]\end{description}
 \end{Desc}
-\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{}\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E}}
-\index{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E}!crunchy@{crunchy}}
-\subsubsection[{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E}}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}
+\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+P\+A\+GE@{E\+F\+L\+A\+G\+\_\+\+P\+A\+GE}}
+\index{E\+F\+L\+A\+G\+\_\+\+P\+A\+GE@{E\+F\+L\+A\+G\+\_\+\+P\+A\+GE}!crunchy@{crunchy}}
+\subsubsection[{E\+F\+L\+A\+G\+\_\+\+P\+A\+GE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+GE}}\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}
 
 
-Holds paging data for E\+F\+L\+A\+G commands. 
+Holds paging data for E\+F\+L\+AG commands. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M} & -\/ Throw on malformed page \\
+{\em P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM} & -\/ Throw on malformed page \\
 \hline
-{\em P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D} & -\/ Throw on page not having a U\+I\+D. Can use this for in cases of needed an U\+I\+D under all costs \\
+{\em P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID} & -\/ Throw on page not having a U\+ID. Can use this for in cases of needed an U\+ID under all costs \\
 \hline
 \end{DoxyParams}
 \begin{Desc}
 \item[Enumerator]\par
 \begin{description}
-\index{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M@{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M@{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M}}\item[{\em 
-\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}{}P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}
-}]\index{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D@{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D@{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D}}\item[{\em 
-\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}{}P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}
-}]\index{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E}}\item[{\em 
-\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}{}P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}
-}]\index{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E}}\item[{\em 
-\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}{}P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}
+\index{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM@{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM@{P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM}}\item[{\em 
+P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+RM\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}{}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}
+}]\index{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID@{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID@{P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID}}\item[{\em 
+P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+ID\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}{}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}
+}]\index{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE}}\item[{\em 
+P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+IE\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}{}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}
+}]\index{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE}!crunchy@{crunchy}}\index{crunchy@{crunchy}!P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE@{P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE}}\item[{\em 
+P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+IE\hypertarget{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}{}\label{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}
 }]\end{description}
 \end{Desc}
 
 
 \subsection{Function Documentation}
-\hypertarget{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}{}\index{crunchy@{crunchy}!arraysize@{arraysize}}
+\index{crunchy@{crunchy}!arraysize@{arraysize}}
 \index{arraysize@{arraysize}!crunchy@{crunchy}}
 \subsubsection[{arraysize(const T(\&v)[S])}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , unsigned S$>$ unsigned crunchy\+::arraysize (
 \begin{DoxyParamCaption}
 \item[{const T(\&)}]{v\mbox{[}\+S\mbox{]}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}
-\hypertarget{namespacecrunchy_ae99f7a9d58dfc20b9d27e322f63af71b}{}\index{crunchy@{crunchy}!create\+\_\+explicit\+\_\+signature@{create\+\_\+explicit\+\_\+signature}}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}{}\label{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}
+\index{crunchy@{crunchy}!create\+\_\+explicit\+\_\+signature@{create\+\_\+explicit\+\_\+signature}}
 \index{create\+\_\+explicit\+\_\+signature@{create\+\_\+explicit\+\_\+signature}!crunchy@{crunchy}}
 \subsubsection[{create\+\_\+explicit\+\_\+signature(static unsigned long default\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nset\+\_\+t} crunchy\+::create\+\_\+explicit\+\_\+signature (
 \begin{DoxyParamCaption}
 \item[{static unsigned long}]{default\+\_\+id}
 \end{DoxyParamCaption}
-)}\label{namespacecrunchy_ae99f7a9d58dfc20b9d27e322f63af71b}
+)}\hypertarget{namespacecrunchy_ae99f7a9d58dfc20b9d27e322f63af71b}{}\label{namespacecrunchy_ae99f7a9d58dfc20b9d27e322f63af71b}
 
 
 Creates explicit signature for piping methods. 
@@ -243,44 +247,44 @@ Creates explicit signature for piping methods.
 \begin{DoxyReturn}{Returns}
 \hyperlink{structcrunchy_1_1nset__t}{nset\+\_\+t} 
 \end{DoxyReturn}
-\hypertarget{namespacecrunchy_a4d23f9d6b97af85e97e61a8e5ef55348}{}\index{crunchy@{crunchy}!create\+C\+R\+N\+Data@{create\+C\+R\+N\+Data}}
+\index{crunchy@{crunchy}!create\+C\+R\+N\+Data@{create\+C\+R\+N\+Data}}
 \index{create\+C\+R\+N\+Data@{create\+C\+R\+N\+Data}!crunchy@{crunchy}}
 \subsubsection[{create\+C\+R\+N\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}void crunchy\+::create\+C\+R\+N\+Data (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{namespacecrunchy_a4d23f9d6b97af85e97e61a8e5ef55348}
-\hypertarget{namespacecrunchy_a840f3455f9eabfd92188118014675544}{}\index{crunchy@{crunchy}!crn@{crn}}
+)}\hypertarget{namespacecrunchy_a4d23f9d6b97af85e97e61a8e5ef55348}{}\label{namespacecrunchy_a4d23f9d6b97af85e97e61a8e5ef55348}
+\index{crunchy@{crunchy}!crn@{crn}}
 \index{crn@{crn}!crunchy@{crunchy}}
 \subsubsection[{crn(\+C\+R\+U\+N\+C\+H\+Y\+\_\+\+U\+I\+N\+T $\ast$, const C\+R\+U\+N\+C\+H\+Y\+\_\+\+S\+T\+R\+I\+N\+G crn\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf crunchy\+::crn} (
 \begin{DoxyParamCaption}
-\item[{{\bf C\+R\+U\+N\+C\+H\+Y\+\_\+\+U\+I\+N\+T} $\ast$}]{, }
-\item[{const {\bf C\+R\+U\+N\+C\+H\+Y\+\_\+\+S\+T\+R\+I\+N\+G}}]{crn\+I\+D}
+\item[{{\bf C\+R\+U\+N\+C\+H\+Y\+\_\+\+U\+I\+NT} $\ast$}]{, }
+\item[{const {\bf C\+R\+U\+N\+C\+H\+Y\+\_\+\+S\+T\+R\+I\+NG}}]{crn\+ID}
 \end{DoxyParamCaption}
-)}\label{namespacecrunchy_a840f3455f9eabfd92188118014675544}
+)}\hypertarget{namespacecrunchy_a840f3455f9eabfd92188118014675544}{}\label{namespacecrunchy_a840f3455f9eabfd92188118014675544}
 
 \begin{DoxyParams}{Parameters}
 {\em -\/} & Anonymous integer for sizing placeholder \\
 \hline
-{\em crn\+I\+D} & -\/ Default Session I\+D \\
+{\em crn\+ID} & -\/ Default Session ID \\
 \hline
 \end{DoxyParams}
-\hypertarget{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}{}\index{crunchy@{crunchy}!has\+C\+R\+N\+Instance@{has\+C\+R\+N\+Instance}}
+\index{crunchy@{crunchy}!has\+C\+R\+N\+Instance@{has\+C\+R\+N\+Instance}}
 \index{has\+C\+R\+N\+Instance@{has\+C\+R\+N\+Instance}!crunchy@{crunchy}}
-\subsubsection[{has\+C\+R\+N\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+R\+D crunchy\+::has\+C\+R\+N\+Instance (
+\subsubsection[{has\+C\+R\+N\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}D\+W\+O\+RD crunchy\+::has\+C\+R\+N\+Instance (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}
+)}\hypertarget{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}{}\label{namespacecrunchy_a0db4bf13f3cad04f2a7ca3526855c46f}
 
 
 \subsection{Variable Documentation}
-\hypertarget{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}{}\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T}}
-\index{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T}!crunchy@{crunchy}}
-\subsubsection[{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E}  crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T\hspace{0.3cm}{\ttfamily [static]}}\label{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}
-\hypertarget{namespacecrunchy_af87c811f546c4e2e1286afbd8b7f8214}{}\index{crunchy@{crunchy}!has\+\_\+prp\+\_\+int\+\_\+t@{has\+\_\+prp\+\_\+int\+\_\+t}}
+\index{crunchy@{crunchy}!E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T}}
+\index{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T@{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T}!crunchy@{crunchy}}
+\subsubsection[{E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+GE}  crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+T\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}{}\label{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}
+\index{crunchy@{crunchy}!has\+\_\+prp\+\_\+int\+\_\+t@{has\+\_\+prp\+\_\+int\+\_\+t}}
 \index{has\+\_\+prp\+\_\+int\+\_\+t@{has\+\_\+prp\+\_\+int\+\_\+t}!crunchy@{crunchy}}
-\subsubsection[{has\+\_\+prp\+\_\+int\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf crunchy\+::has\+\_\+prp\+\_\+int}  crunchy\+::has\+\_\+prp\+\_\+int\+\_\+t}\label{namespacecrunchy_af87c811f546c4e2e1286afbd8b7f8214}
-\hypertarget{namespacecrunchy_a485eab134ce624b5c2330b623928030f}{}\index{crunchy@{crunchy}!type\+\_\+form\+\_\+t@{type\+\_\+form\+\_\+t}}
+\subsubsection[{has\+\_\+prp\+\_\+int\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf crunchy\+::has\+\_\+prp\+\_\+int}  crunchy\+::has\+\_\+prp\+\_\+int\+\_\+t}\hypertarget{namespacecrunchy_af87c811f546c4e2e1286afbd8b7f8214}{}\label{namespacecrunchy_af87c811f546c4e2e1286afbd8b7f8214}
+\index{crunchy@{crunchy}!type\+\_\+form\+\_\+t@{type\+\_\+form\+\_\+t}}
 \index{type\+\_\+form\+\_\+t@{type\+\_\+form\+\_\+t}!crunchy@{crunchy}}
-\subsubsection[{type\+\_\+form\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf crunchy\+::type\+\_\+form}  crunchy\+::type\+\_\+form\+\_\+t}\label{namespacecrunchy_a485eab134ce624b5c2330b623928030f}
+\subsubsection[{type\+\_\+form\+\_\+t}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf crunchy\+::type\+\_\+form}  crunchy\+::type\+\_\+form\+\_\+t}\hypertarget{namespacecrunchy_a485eab134ce624b5c2330b623928030f}{}\label{namespacecrunchy_a485eab134ce624b5c2330b623928030f}
