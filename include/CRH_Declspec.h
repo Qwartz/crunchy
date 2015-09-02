@@ -38,6 +38,7 @@ namespace crunchy
             class chspec;
 
             #define __DECLSPEC_INTERNAL /**< Defines internal API function for DECLSPEC */
+            #define __PROC_KEY
         }
 
         #define MIN_VER_            0x0000001A /**< Define minimum internal version specification to the runtime shell. */
@@ -95,8 +96,7 @@ namespace crunchy
             (
             uint64_t overload_id,
             const char overload_cmd[]
-            ){
-            }
+            )__PROC_KEY;
     }
 
 }
