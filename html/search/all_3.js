@@ -1,6 +1,7 @@
 var searchData=
 [
   ['dealloc_5fpage',['DEALLOC_PAGE',['../_c_r_h___temp_var_data_8h.html#a397bad41cea5764e925992017308a0cb',1,'CRH_TempVarData.h']]],
+  ['decl_5ft',['decl_t',['../namespacecrunchy_1_1declarator.html#a0f9bbabe1552349f0ee0ae228ed30bb2',1,'crunchy::declarator']]],
   ['declspec_2ecpp',['Declspec.cpp',['../_declspec_8cpp.html',1,'']]],
   ['declspec_5fhas_5fno_5fperms',['DECLSPEC_HAS_NO_PERMS',['../_c_r_h___declspec_8h.html#a33b68b9f1872b8cd039b344221d2a937',1,'CRH_Declspec.h']]],
   ['declspec_5fhas_5fperms',['DECLSPEC_HAS_PERMS',['../_c_r_h___declspec_8h.html#aab6bc0cf8c0241fa6ff33ab642377134',1,'CRH_Declspec.h']]],

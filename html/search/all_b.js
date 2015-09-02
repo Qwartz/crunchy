@@ -7,6 +7,7 @@ var searchData=
   ['page_5fwill_5fnever_5fdie',['PAGE_WILL_NEVER_DIE',['../namespacecrunchy.html#ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1',1,'crunchy']]],
   ['paging_5freferences',['PAGING_REFERENCES',['../_c_r_h___int_8h.html#af6008338e4925309e9962d34d46b33db',1,'CRH_Int.h']]],
   ['parse_5fcrmp',['PARSE_CRMP',['../namespacecrunchy.html#acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c',1,'crunchy']]],
+  ['pdecl_5ft',['pdecl_t',['../namespacecrunchy_1_1declarator.html#a518adbd030268ca7f676cfe5c5ee7624',1,'crunchy::declarator']]],
   ['penv_5fdata_5ft',['PENV_DATA_T',['../namespacecrunchy_1_1_u_n_i_x___portable.html#a3e10341fe78682a3fd657e631e2659dc',1,'crunchy::UNIX_Portable']]],
   ['pgs_5ft',['pgs_t',['../structcrunchy_1_1pgs__t.html',1,'crunchy']]],
   ['prevent_5floc',['PREVENT_LOC',['../_c_r_h___temp_var_data_8h.html#a89290f416d5943a9c0e5dee71cefa92e',1,'CRH_TempVarData.h']]],

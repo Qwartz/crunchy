@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_5f_5fdeclspec_5farchl',['__DECLSPEC_ARCHL',['../structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html',1,'crunchy::declarator']]],
   ['_5f_5fdeclspec_5finternal',['__DECLSPEC_INTERNAL',['../_c_r_h___declspec_8h.html#add2c9e5146b4eb6fdda70423049d29a4',1,'CRH_Declspec.h']]],
   ['_5f_5fdeclspec_5finternal_5fbegin',['__DECLSPEC_INTERNAL_BEGIN',['../_c_r_h___declspec_8h.html#adc3cb3f3b786a8613c7cdaa1a5e75191',1,'CRH_Declspec.h']]],
   ['_5f_5fdeclspec_5finternal_5fend',['__DECLSPEC_INTERNAL_END',['../_c_r_h___declspec_8h.html#acc5cd9ea057f2857f8faf4d6e666174b',1,'CRH_Declspec.h']]],
