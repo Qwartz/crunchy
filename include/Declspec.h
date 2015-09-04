@@ -61,12 +61,12 @@ namespace crunchy
             uint32_t archl_has_spin;       /**< Arch Lock has explicit spin */
             uint32_t returns_forward_decl; /**< Returns a forward declaration */
         } decl_t, *pdecl_t;
-        
+
         /**
          * \brief If running an internal API Process
          */
         #ifdef _INTERNAL_API_PROC
-        #   define  _MAX_ALLOC_TABLE  32 /**< Max allocation table allowable (32-Bits per block) */ 
+        #   define  _MAX_ALLOC_TABLE  32 /**< Max allocation table allowable (32-Bits per block) */
         #   define  _MAX_ALLOC_STREAM 10 /**< Max allocation stream per table (10-Bits per table) */
 
         /**
@@ -85,7 +85,7 @@ namespace crunchy
 
         /**
          * \brief Overloads concurrent processes running
-         * 
+         *
          * \param overload_id - ID assigned to overload process
          * \param overload_cmd[] - Overload command
          *

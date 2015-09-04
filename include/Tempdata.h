@@ -98,7 +98,7 @@ namespace crunchy
          */
         #define DEALLOC_PAGE(p) (free(p))
 
-         
+
     }
 
     /**
@@ -283,7 +283,7 @@ enum EFLAG_CRMP
  *
  */
 static enum EFLAG_PAGE
-{    
+{
     PAGE_HAS_NO_FORM,
     PAGE_VOIDABLE_HAS_NO_UID,
     PAGE_WILL_DIE,
