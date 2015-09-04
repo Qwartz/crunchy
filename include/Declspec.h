@@ -1,5 +1,5 @@
 /**
-* \file CRH_Declspec.h
+* \file Declspec.h
 * \brief Internal declarations and specifications
 * \details Contains all defines for internal revisioning and specifications.
 * \author Corbin Matschull
@@ -33,12 +33,13 @@ namespace crunchy
         {
             //  ===================================================
             //  ---------------------------------------------------
-            /// \brief      MAIN CRUNCHY ALLOCATOR
+            /// \brief      Main Crunchy Allocator
             template<class T, class Allocator = std::allocator<T>>
             class chspec;
 
             #define __DECLSPEC_INTERNAL /**< Defines internal API function for DECLSPEC */
         }
+
 
         #define MIN_VER_            0x0000001A /**< Define minimum internal version specification to the runtime shell. */
         #define MIN_VER_NON_ALIGNED 0x0000004A /**< Define non-aligned minimum version specification to the runtime shell. */
@@ -95,8 +96,7 @@ namespace crunchy
             (
             uint64_t overload_id,
             const char overload_cmd[]
-            ){
-            }
+            );
     }
 
 }

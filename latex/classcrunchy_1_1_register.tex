@@ -7,7 +7,7 @@ Class for registering object components and putting them in a hashtable.
 
 
 
-{\ttfamily \#include $<$C\+R\+H\+\_\+\+Temp\+Var\+Data.\+h$>$}
+{\ttfamily \#include $<$Tempdata.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -22,7 +22,7 @@ void \hyperlink{classcrunchy_1_1_register_a3cc81983d4be4f35dc219dda5b890624}{run
 \begin{DoxyCompactList}\small\item\em runt (Runtime. Unified. Node. Tester), this will test and parse components on a \char`\"{}block\char`\"{} basis \end{DoxyCompactList}\item 
 B\+O\+O\+L \hyperlink{classcrunchy_1_1_register_aef7cf5f7f48c362138a2d4345a809eae}{register\+\_\+component} (bool has\+U\+I\+D, bool has\+Signed\+U\+I\+D, D\+W\+O\+R\+D key\+Size\+U\+I\+D)
 \begin{DoxyCompactList}\small\item\em Main registry function for this file, this generates a default U\+I\+D (if none is specified) \end{DoxyCompactList}\item 
-B\+O\+O\+L \hyperlink{classcrunchy_1_1_register_a0169350a094eb27bfa9a64733f2de197}{deregister\+\_\+component} (bool signed\+U\+I\+D, D\+W\+O\+R\+D key\+Len, std\+::string path=\hyperlink{_c_r_h___temp_var_data_8h_a7ab10fbd11f547292657ef7866c446e6}{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H})
+B\+O\+O\+L \hyperlink{classcrunchy_1_1_register_a0169350a094eb27bfa9a64733f2de197}{deregister\+\_\+component} (bool signed\+U\+I\+D, D\+W\+O\+R\+D key\+Len, std\+::string path=\hyperlink{_tempdata_8h_a7ab10fbd11f547292657ef7866c446e6}{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H})
 \begin{DoxyCompactList}\small\item\em Deregisters component based upon component U\+I\+D. \end{DoxyCompactList}\item 
 D\+W\+O\+R\+D \hyperlink{classcrunchy_1_1_register_ad3cbb294cf16181e609fc9a0900d62ea}{check\+\_\+temp\+\_\+crc} (D\+W\+O\+R\+D crc\+\_\+sign, std\+::string crc\+\_\+p)
 \end{DoxyCompactItemize}
@@ -99,7 +99,7 @@ Deregisters component based upon component U\+I\+D.
 This will check if component is currently active or running, if T\+R\+U\+E; will throw error.
 
 \begin{DoxyAttention}{Attention}
-If component was registered using a \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}, this cannot deregister. If any other components use \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D} it will deregister all of them.
+If component was registered using a \hyperlink{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}, this cannot deregister. If any other components use \hyperlink{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D} it will deregister all of them.
 \end{DoxyAttention}
 
 \begin{DoxyParams}{Parameters}
@@ -155,7 +155,7 @@ Main registry function for this file, this generates a default U\+I\+D (if none 
 
 It checks for signed or unsigned U\+I\+D\textquotesingle{}s and can generate based off of the key\+Size\+U\+I\+D
 
-For default U\+I\+D signature see\+: \hyperlink{_c_r_h___signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}
+For default U\+I\+D signature see\+: \hyperlink{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}
 
 
 \begin{DoxyParams}{Parameters}
@@ -197,4 +197,4 @@ Nothing
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\hyperlink{_c_r_h___temp_var_data_8h}{C\+R\+H\+\_\+\+Temp\+Var\+Data.\+h}\end{DoxyCompactItemize}
+include/\hyperlink{_tempdata_8h}{Tempdata.\+h}\end{DoxyCompactItemize}

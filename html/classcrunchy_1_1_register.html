@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Class for registering object components and putting them in a hashtable.  
  <a href="classcrunchy_1_1_register.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_c_r_h___temp_var_data_8h_source.html">CRH_TempVarData.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_tempdata_8h_source.html">Tempdata.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef7cf5f7f48c362138a2d4345a809eae"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrunchy_1_1_register.html#aef7cf5f7f48c362138a2d4345a809eae">register_component</a> (bool hasUID, bool hasSignedUID, DWORD keySizeUID)</td></tr>
 <tr class="memdesc:aef7cf5f7f48c362138a2d4345a809eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main registry function for this file, this generates a default UID (if none is specified)  <a href="#aef7cf5f7f48c362138a2d4345a809eae">More...</a><br /></td></tr>
 <tr class="separator:aef7cf5f7f48c362138a2d4345a809eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0169350a094eb27bfa9a64733f2de197"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrunchy_1_1_register.html#a0169350a094eb27bfa9a64733f2de197">deregister_component</a> (bool signedUID, DWORD keyLen, std::string path=<a class="el" href="_c_r_h___temp_var_data_8h.html#a7ab10fbd11f547292657ef7866c446e6">TEMPVAR_PATH</a>)</td></tr>
+<tr class="memitem:a0169350a094eb27bfa9a64733f2de197"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrunchy_1_1_register.html#a0169350a094eb27bfa9a64733f2de197">deregister_component</a> (bool signedUID, DWORD keyLen, std::string path=<a class="el" href="_tempdata_8h.html#a7ab10fbd11f547292657ef7866c446e6">TEMPVAR_PATH</a>)</td></tr>
 <tr class="memdesc:a0169350a094eb27bfa9a64733f2de197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregisters component based upon component UID.  <a href="#a0169350a094eb27bfa9a64733f2de197">More...</a><br /></td></tr>
 <tr class="separator:a0169350a094eb27bfa9a64733f2de197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cbb294cf16181e609fc9a0900d62ea"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrunchy_1_1_register.html#ad3cbb294cf16181e609fc9a0900d62ea">check_temp_crc</a> (DWORD crc_sign, std::string crc_p)</td></tr>
@@ -250,7 +250,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>path</em> = <code><a class="el" href="_c_r_h___temp_var_data_8h.html#a7ab10fbd11f547292657ef7866c446e6">TEMPVAR_PATH</a></code>&#160;</td>
+          <td class="paramname"><em>path</em> = <code><a class="el" href="_tempdata_8h.html#a7ab10fbd11f547292657ef7866c446e6">TEMPVAR_PATH</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -262,7 +262,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Deregisters component based upon component UID. </p>
 <p>This will check if component is currently active or running, if TRUE; will throw error.</p>
-<dl class="section attention"><dt>Attention</dt><dd>If component was registered using a <a class="el" href="_c_r_h___signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a>, this cannot deregister. If any other components use <a class="el" href="_c_r_h___signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a> it will deregister all of them.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>If component was registered using a <a class="el" href="_signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a>, this cannot deregister. If any other components use <a class="el" href="_signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a> it will deregister all of them.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signedUID</td><td>- has signed UID </td></tr>
@@ -359,7 +359,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Main registry function for this file, this generates a default UID (if none is specified) </p>
 <p>It checks for signed or unsigned UID's and can generate based off of the keySizeUID</p>
-<p>For default UID signature see: <a class="el" href="_c_r_h___signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a></p>
+<p>For default UID signature see: <a class="el" href="_signatures_8h.html#a9f86ebb1e98d037611b3c513ac1add73">DEFAULT_GENERATED_UID</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hasUID</td><td>- TRUE if component already has UID FALSE if component doesn't and a UID will be assigned </td></tr>
@@ -410,7 +410,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="_c_r_h___temp_var_data_8h_source.html">CRH_TempVarData.h</a></li>
+<li>include/<a class="el" href="_tempdata_8h_source.html">Tempdata.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

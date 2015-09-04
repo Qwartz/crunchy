@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['win_5fnamespace_5fbegin',['WIN_NAMESPACE_BEGIN',['../_c_r_h___portability_8h.html#a471b776da68907766c2e0f53bfd3f6a9',1,'CRH_Portability.h']]],
-  ['win_5fnamespace_5fend',['WIN_NAMESPACE_END',['../_c_r_h___portability_8h.html#a59b0cc40b4d00e22a564b36661cfe60c',1,'CRH_Portability.h']]]
+  ['variable_5fdata_5fuid',['VARIABLE_DATA_UID',['../_tempdata_8h.html#ade53d16378ba9499fbf2384ad8b1b72e',1,'Tempdata.h']]],
+  ['virtual',['Virtual',['../classcrunchy_1_1_virtual.html',1,'crunchy']]],
+  ['virtualuid',['virtualUID',['../structcrunchy_1_1pgs__t.html#a826bb981b0483387e8c5ae31c0ed106f',1,'crunchy::pgs_t']]],
+  ['vreference',['vReference',['../classcrunchy_1_1_virtual.html#acf317286283a3916ccb1d4752074af5f',1,'crunchy::Virtual']]]
 ];

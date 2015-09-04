@@ -1,5 +1,5 @@
 /**
-* \file CRH_TempVarData.h
+* \file Tempdata.h
 * \brief Temporary data file
 * \details This contains code to modify, create and delete temporary data.
 * \author Corbin Matschull

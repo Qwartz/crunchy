@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['signableid',['signableID',['../structcrunchy_1_1pgs__t.html#a9a56b73215866d5bde8455f7752e9572',1,'crunchy::pgs_t']]],
-  ['stack_5ft',['stack_t',['../classcrunchy_1_1_virtual.html#ad108e31577fcad0d6ff9ff6d7b3d5249',1,'crunchy::Virtual']]],
-  ['stdcrn',['stdCRN',['../structcrunchy_1_1crn.html#ae5f71a10acf2431498d683fee28851db',1,'crunchy::crn']]]
+  ['returns_5fforward_5fdecl',['returns_forward_decl',['../structcrunchy_1_1declarator_1_1_____d_e_c_l_s_p_e_c___a_r_c_h_l.html#a73a2d868629fed82ad40089b1a7066d4',1,'crunchy::declarator::__DECLSPEC_ARCHL']]]
 ];

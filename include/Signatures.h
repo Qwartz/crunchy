@@ -1,5 +1,5 @@
 /**
- * \file CRH_Signatures.h
+ * \file Signatures.h
  * \brief Signature creation and deletion
  * \details This file contains code for signature creation and deletion.
  * \author Corbin Matschull

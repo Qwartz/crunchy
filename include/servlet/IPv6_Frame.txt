@@ -1,0 +1,21 @@
+Custom IPv6 Routing and Frame Packaging System
+Current Revision: 0.4
+
+Tested IP's and Servers:
+
+    |       IP       |       DNS ROUTING       |     HAS NAT    |    IP MASKING    |
+    |  10.10.10.10   |       sv.dns1.com       |      FALSE     |      FALSE       |
+    |
+    |
+    |
+    |
+    |
+
+
+
+
+Frame Packaging System:
+
+
+Get IP from DNS -> Create DNS CRC-Hash -> Use OSPF -> Use Routing Table Information Recieved from the DNS -> 
+   Subnetted?

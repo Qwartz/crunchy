@@ -1,5 +1,5 @@
 /**
-* \file CRH_Inline.h
+* \file Inline.h
 * \brief Inline functions and templates
 * \details This contains templates and prototypes to create inline components.
 * \author Corbin Matschull

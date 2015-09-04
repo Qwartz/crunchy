@@ -1,5 +1,5 @@
 /**
-* \file CRH_Int.h
+* \file Cint.h
 * \brief Integer sizing and internal defines
 * \details Internal sizes and typedefs
 * \author Corbin Matschull

@@ -1,5 +1,5 @@
 /**
-* \file CRH_Portability.h
+* \file Portability.h
 * \brief Portable code for cross-compiling and cross-OS usage
 * \author Corbin Matschull
 * \version 1.4
@@ -7,7 +7,7 @@
 */
 #pragma once
 #include <Windows.h>
-#include "CRH_Signatures.h"
+#include "Signatures.h"
 namespace crunchy
 {
     // =====================================

@@ -16,11 +16,17 @@
     <Filter Include="Header Files\include">
       <UniqueIdentifier>{51d592fb-2f0d-4905-86b7-2c5fba565d51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\include\servlet">
+      <UniqueIdentifier>{f6f851fb-0253-49cd-972e-9040f4aea774}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
     <Text Include=".tmpdtd.txt">
       <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="include\servlet\IPv6_Frame.txt">
+      <Filter>Header Files\include\servlet</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -30,23 +36,26 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_Portability.h">
+    <ClInclude Include="include\Declspec.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_Signatures.h">
+    <ClInclude Include="include\Inline.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_TempVarData.h">
+    <ClInclude Include="include\Cint.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_Declspec.h">
+    <ClInclude Include="include\Portability.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_Int.h">
+    <ClInclude Include="include\Signatures.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\CRH_Inline.h">
+    <ClInclude Include="include\Tempdata.h">
       <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\servlet\ServletIPv6.h">
+      <Filter>Header Files\include\servlet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
