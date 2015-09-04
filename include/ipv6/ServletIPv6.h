@@ -12,7 +12,7 @@ namespace crunchy
 {
     namespace ipv6
     {
-        
+
         #define __HAS_IPV6_NAMESPACE /**< Use after defining ipv6 namespace elsewhere */
         #define __RETURNS_NULL /**< IP-Object must return null */
 
@@ -24,14 +24,12 @@ namespace crunchy
         struct ipv6_routing_routine
         {
             typedef long long ipv6_table[]; /** Define a 128-Bit table array */
-            
-            
         } ipv6_r_t;
 
         class ipv6Data
         {
             public:
-                long returnDataFromDNS();
+                long createDNSHeader(ipv6_r_t *routing_table);
         };
     }
 

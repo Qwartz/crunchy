@@ -17,5 +17,5 @@ Tested IP's and Servers:
 Frame Packaging System:
 
 
-Get IP from DNS -> Create DNS CRC-Hash -> Use OSPF -> Use Routing Table Information Recieved from the DNS -> 
+Get IP from DNS -> Create DNS CRC-Hash -> Use OSPF -> Use Routing Table Information Recieved from the DNS ->
    Subnetted?
