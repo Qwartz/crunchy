@@ -16,12 +16,12 @@ namespace crunchy
         #define __HAS_IPV6_NAMESPACE /**< Use after defining ipv6 namespace elsewhere */
         #define __RETURNS_NULL /**< IP-Object must return null */
 
-        long ipv6_t;
+        typedef long ipv6_t;
 
         /**
          * \brief Routing information for IPv6 data
          */
-        struct ipv6_routing_routine
+        typedef struct ipv6_routing_routine
         {
             typedef long long ipv6_table[]; /** Define a 128-Bit table array */
         } ipv6_r_t;
@@ -29,7 +29,19 @@ namespace crunchy
         class ipv6Data
         {
             public:
-                long createDNSHeader(ipv6_r_t *routing_table);
+                /**
+                 * \brief Creates DNS header to send to the most recent/active DNS
+                 *
+                 * \param routing_table - Accesses ipv6_routing_routine structure
+                 * \param dns_id[] - static DNS ID
+                 * \param send_flag - Sending flag to DNS
+                 *
+                 * \return 1L | 0
+                 */
+                ipv6_t createDNSHeader(ipv6_r_t *routing_table, 
+                                       char *dns_id[],
+                                       ipv6_t send_flag
+                                      );
         };
     }
 

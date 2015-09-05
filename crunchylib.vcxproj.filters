@@ -16,8 +16,8 @@
     <Filter Include="Header Files\include">
       <UniqueIdentifier>{51d592fb-2f0d-4905-86b7-2c5fba565d51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\include\servlet">
-      <UniqueIdentifier>{f6f851fb-0253-49cd-972e-9040f4aea774}</UniqueIdentifier>
+    <Filter Include="Header Files\include\ipv6">
+      <UniqueIdentifier>{fdfcb89a-39fd-4fe9-8b49-9be2da1080d5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -25,8 +25,8 @@
     <Text Include=".tmpdtd.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="include\servlet\IPv6_Frame.txt">
-      <Filter>Header Files\include\servlet</Filter>
+    <Text Include="include\ipv6\IPv6_Frame.txt">
+      <Filter>Header Files\include\ipv6</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -54,8 +54,8 @@
     <ClInclude Include="include\Tempdata.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="include\servlet\ServletIPv6.h">
-      <Filter>Header Files\include\servlet</Filter>
+    <ClInclude Include="include\ipv6\ServletIPv6.h">
+      <Filter>Header Files\include\ipv6</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

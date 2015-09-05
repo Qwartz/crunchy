@@ -143,15 +143,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include=".tmpdtd.txt" />
-    <Text Include="include\servlet\IPv6_Frame.txt" />
+    <Text Include="include\ipv6\IPv6_Frame.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Declspec.h" />
     <ClInclude Include="include\Inline.h" />
     <ClInclude Include="include\Cint.h" />
+    <ClInclude Include="include\ipv6\ServletIPv6.h" />
     <ClInclude Include="include\Portability.h" />
-    <ClInclude Include="include\servlet\ServletIPv6.h" />
     <ClInclude Include="include\Signatures.h" />
     <ClInclude Include="include\Tempdata.h" />
     <ClInclude Include="stdafx.h" />

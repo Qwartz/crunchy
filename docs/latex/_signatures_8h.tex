@@ -1,0 +1,122 @@
+\hypertarget{_signatures_8h}{}\section{include/\+Signatures.h File Reference}
+\label{_signatures_8h}\index{include/\+Signatures.\+h@{include/\+Signatures.\+h}}
+
+
+Signature creation and deletion.  
+
+
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$array$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcrunchy_1_1pseudo}{crunchy\+::pseudo}
+\begin{DoxyCompactList}\small\item\em Use this for explicit pseudo signs. \end{DoxyCompactList}\item 
+struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t}
+\begin{DoxyCompactList}\small\item\em No set types structure. This stores set types into a handy variable to use when dealing with page files. \end{DoxyCompactList}\item 
+class \hyperlink{classcrunchy_1_1_signatures}{crunchy\+::\+Signatures}
+\begin{DoxyCompactList}\small\item\em This is used for creating signatures to verify objects, components and file against a master server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecrunchy}{crunchy}
+\begin{DoxyCompactList}\small\item\em Main Crunchylib Namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}~1\+U\+L
+\item 
+\#define \hyperlink{_signatures_8h_a4cf7ff8aeb847b5144d37bb0f2818387}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}
+\begin{DoxyCompactList}\small\item\em Use as post argument define in function if current shell environment will not have a process subroutine attached to itself. \end{DoxyCompactList}\item 
+\#define \hyperlink{_signatures_8h_a3f5aecd604689fdd466ced4997e5331e}{\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N}~void
+\begin{DoxyCompactList}\small\item\em Use this for explicit signature functions. \end{DoxyCompactList}\item 
+\#define \hyperlink{_signatures_8h_a3a5b38c561323902a8114d944c3f75ff}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+A
+\item 
+\#define \hyperlink{_signatures_8h_ad1c8369359df9d7a2b2a5426af084d72}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+B
+\item 
+\#define \hyperlink{_signatures_8h_aa7200f7d7eabbeb40deb183b1756e287}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+C
+\item 
+\#define \hyperlink{_signatures_8h_a74d241e340380fbdffaf5f7b105bca94}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+D
+\item 
+\#define \hyperlink{_signatures_8h_a9e7bfadb234e0937419983bb79f103f9}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+E
+\item 
+\#define \hyperlink{_signatures_8h_ab99f5174e926ec149acbaaec1a708f77}{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S}~0x\+C000001\+F
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} \hyperlink{namespacecrunchy_a675701955bf4d2f3c9f02332aec33cc0}{crunchy\+::\+N\+S\+E\+T\+\_\+\+T}
+\begin{DoxyCompactList}\small\item\em No set types structure. This stores set types into a handy variable to use when dealing with page files. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcrunchy_1_1nset__t}{crunchy\+::nset\+\_\+t} $\ast$ \hyperlink{namespacecrunchy_ab958409ccb75be47eba557824d83fb0e}{crunchy\+::\+P\+\_\+\+N\+S\+E\+T\+\_\+\+T}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , unsigned S$>$ }\\unsigned \hyperlink{namespacecrunchy_a89c38384d258972d08bcfd8da72c86bb}{crunchy\+::arraysize} (const T(\&v)\mbox{[}S\mbox{]})
+\item 
+nset\+\_\+t \hyperlink{namespacecrunchy_ae99f7a9d58dfc20b9d27e322f63af71b}{crunchy\+::create\+\_\+explicit\+\_\+signature} (static unsigned long default\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Creates explicit signature for piping methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Signature creation and deletion. 
+
+This file contains code for signature creation and deletion. \begin{DoxyAuthor}{Author}
+Corbin Matschull 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1r2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Aug 30. 2015 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Make sure you have G\+N\+U G\+C\+C or L\+L\+V\+M to compile, B\+S\+D or V\+C\+C won\textquotesingle{}t compile. 
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+Cannot run in a volatile memory space 
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Out} & of Range Exception \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_signatures_8h_a3f5aecd604689fdd466ced4997e5331e}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N@{\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N}}
+\index{\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N@{\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+S\+I\+G\+N~void}\label{_signatures_8h_a3f5aecd604689fdd466ced4997e5331e}
+
+
+Use this for explicit signature functions. 
+
+\hypertarget{_signatures_8h_a74d241e340380fbdffaf5f7b105bca94}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+C\+A\+L\+L\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+D}\label{_signatures_8h_a74d241e340380fbdffaf5f7b105bca94}
+\hypertarget{_signatures_8h_a3a5b38c561323902a8114d944c3f75ff}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+D\+U\+M\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+A}\label{_signatures_8h_a3a5b38c561323902a8114d944c3f75ff}
+\hypertarget{_signatures_8h_ab99f5174e926ec149acbaaec1a708f77}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+F\+O\+R\+C\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+F}\label{_signatures_8h_ab99f5174e926ec149acbaaec1a708f77}
+\hypertarget{_signatures_8h_a4cf7ff8aeb847b5144d37bb0f2818387}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+P\+R\+O\+C\+E\+S\+S}\label{_signatures_8h_a4cf7ff8aeb847b5144d37bb0f2818387}
+
+
+Use as post argument define in function if current shell environment will not have a process subroutine attached to itself. 
+
+\hypertarget{_signatures_8h_ad1c8369359df9d7a2b2a5426af084d72}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+H\+O\+L\+D\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+B}\label{_signatures_8h_ad1c8369359df9d7a2b2a5426af084d72}
+\hypertarget{_signatures_8h_aa7200f7d7eabbeb40deb183b1756e287}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+I\+G\+N\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+C}\label{_signatures_8h_aa7200f7d7eabbeb40deb183b1756e287}
+\hypertarget{_signatures_8h_a9e7bfadb234e0937419983bb79f103f9}{}\index{Signatures.\+h@{Signatures.\+h}!\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S}}
+\index{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S@{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{\+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+S\+H\+E\+L\+L\+\_\+\+E\+N\+V\+\_\+\+S\+T\+A\+C\+K\+\_\+\+P\+R\+O\+C\+E\+S\+S~0x\+C000001\+E}\label{_signatures_8h_a9e7bfadb234e0937419983bb79f103f9}
+\hypertarget{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}{}\index{Signatures.\+h@{Signatures.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D@{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D@{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}!Signatures.\+h@{Signatures.\+h}}
+\subsubsection[{D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+F\+A\+U\+L\+T\+\_\+\+G\+E\+N\+E\+R\+A\+T\+E\+D\+\_\+\+U\+I\+D~1\+U\+L}\label{_signatures_8h_a9f86ebb1e98d037611b3c513ac1add73}

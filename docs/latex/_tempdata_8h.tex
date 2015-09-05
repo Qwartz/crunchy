@@ -1,0 +1,173 @@
+\hypertarget{_tempdata_8h}{}\section{include/\+Tempdata.h File Reference}
+\label{_tempdata_8h}\index{include/\+Tempdata.\+h@{include/\+Tempdata.\+h}}
+
+
+Temporary data file.  
+
+
+{\ttfamily \#include $<$Windows.\+h$>$}\\*
+{\ttfamily \#include $<$minwindef.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtmp__dt}{tmp\+\_\+dt}
+\begin{DoxyCompactList}\small\item\em Temp data type, this holds variables to store information for temporary data files. \end{DoxyCompactList}\item 
+struct \hyperlink{structcrunchy_1_1ms5__hash}{crunchy\+::ms5\+\_\+hash}
+\begin{DoxyCompactList}\small\item\em Primary ms5 hashtable data memebers. \end{DoxyCompactList}\item 
+struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}
+\begin{DoxyCompactList}\small\item\em Content keys for keeping content strings in handy containers. \end{DoxyCompactList}\item 
+struct \hyperlink{structcrunchy_1_1type__form}{crunchy\+::type\+\_\+form}
+\begin{DoxyCompactList}\small\item\em type forms, checks for unary significance. \end{DoxyCompactList}\item 
+class \hyperlink{classcrunchy_1_1_register}{crunchy\+::\+Register}
+\begin{DoxyCompactList}\small\item\em Class for registering object components and putting them in a hashtable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecrunchy}{crunchy}
+\begin{DoxyCompactList}\small\item\em Main Crunchylib Namespace. \end{DoxyCompactList}\item 
+ \hyperlink{namespacecrunchy_1_1paging}{crunchy\+::paging}
+\begin{DoxyCompactList}\small\item\em Page allocation and memory management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_tempdata_8h_af66cdd64c4d0c558d4cb016c4e0d6694}{U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E}~double
+\item 
+\#define \hyperlink{_tempdata_8h_a7ab10fbd11f547292657ef7866c446e6}{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H}~\char`\"{}\%Home\+Path\%/.tmpvardtm.\+txt\char`\"{}
+\item 
+\#define \hyperlink{_tempdata_8h_a307cfdceaee3f928855a22157a52a812}{P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N}~0xc00ce
+\item 
+\#define \hyperlink{_tempdata_8h_a5aaa3f0b7467b4e414b553cedbb6f2bc}{R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F}~0xdeadbeef
+\item 
+\#define \hyperlink{_tempdata_8h_aaf39fd3d34d47b76240ae83bdf7c3666}{M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N}~1
+\item 
+\#define \hyperlink{_tempdata_8h_a89290f416d5943a9c0e5dee71cefa92e}{P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C}~0
+\item 
+\#define \hyperlink{_tempdata_8h_ade53d16378ba9499fbf2384ad8b1b72e}{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D}~1\+U\+L
+\begin{DoxyCompactList}\small\item\em Default U\+I\+D for registry components. You can redefine this for any U\+I\+D you like just do\+: define V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D new\+U\+I\+D. \end{DoxyCompactList}\item 
+\#define \hyperlink{_tempdata_8h_a5f9420f30a042de64ddd0531bc781e98}{H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K}~0x2\+C
+\item 
+\#define \hyperlink{_tempdata_8h_abdf67564be04240324d5117426952ff0}{H\+A\+S\+\_\+\+C\+H\+E\+C\+K}~0x1\+C
+\item 
+\#define \hyperlink{_tempdata_8h_a6f3bff4d272a479fbc524279fa96dc04}{A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}(p)~(malloc(p))
+\begin{DoxyCompactList}\small\item\em Allocate a page size. \end{DoxyCompactList}\item 
+\#define \hyperlink{_tempdata_8h_a397bad41cea5764e925992017308a0cb}{D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}(p)~(free(p))
+\begin{DoxyCompactList}\small\item\em Deallocate page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcrunchy_1_1ms5__hash}{crunchy\+::ms5\+\_\+hash} \hyperlink{namespacecrunchy_a21315e3a9026f19da3135447e60f8955}{crunchy\+::ms5\+\_\+hash\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Primary ms5 hashtable data memebers. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S} \hyperlink{namespacecrunchy_a6eff164c7bb3015fe59ea97d06ad97aa}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S}
+\begin{DoxyCompactList}\small\item\em Content keys for keeping content strings in handy containers. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcrunchy_1_1_c_o_n_t_e_n_t___k_e_y_s}{crunchy\+::\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S} $\ast$ \hyperlink{namespacecrunchy_ae129fa6af952168d3ded4da75f1707c4}{crunchy\+::\+\_\+\+C\+O\+N\+T\+E\+N\+T\+\_\+\+K\+E\+Y\+S\+\_\+\+P}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+C\+R\+M\+P} \{ \hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a8cc66679b59c48ccb2d9b35f3761979d}{crunchy\+::\+N\+U\+L\+L\+\_\+\+C\+R\+M\+P} = 0x0, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a4fcc2f729bd2b01f871e8f0cea43127c}{crunchy\+::\+P\+A\+R\+S\+E\+\_\+\+C\+R\+M\+P}, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4a1551775cd317af7882c75d96d25ab819}{crunchy\+::\+\_\+\+H\+A\+S\+\_\+\+E\+F\+L\+A\+G\+\_\+\+C\+H\+E\+C\+K}, 
+\hyperlink{namespacecrunchy_acc00ed7986064df9b2232c76a22709c4ab85d7a8c84ed693d462fd413330c33c5}{crunchy\+::\+\_\+\+S\+T\+E\+M\+\_\+\+E\+F\+L\+A\+G\+\_\+\+E\+N\+V}
+ \}\begin{DoxyCompactList}\small\item\em Holds E\+F\+L\+A\+G data to send to C\+R\+C checkers. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E} \{ \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a48d2d3c0ba354f76e55077d68980cfba}{crunchy\+::\+P\+A\+G\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+F\+O\+R\+M}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a155358a15b014d55f44420c2873a1462}{crunchy\+::\+P\+A\+G\+E\+\_\+\+V\+O\+I\+D\+A\+B\+L\+E\+\_\+\+H\+A\+S\+\_\+\+N\+O\+\_\+\+U\+I\+D}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9afc2fedd6cffdfcc42f3688718a868694}{crunchy\+::\+P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+D\+I\+E}, 
+\hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9a7e1cf7b87501f14c7b257dcd9547c9f1}{crunchy\+::\+P\+A\+G\+E\+\_\+\+W\+I\+L\+L\+\_\+\+N\+E\+V\+E\+R\+\_\+\+D\+I\+E}
+ \}\begin{DoxyCompactList}\small\item\em Holds paging data for E\+F\+L\+A\+G commands. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcrunchy_1_1type__form}{crunchy\+::type\+\_\+form} \hyperlink{namespacecrunchy_a485eab134ce624b5c2330b623928030f}{crunchy\+::type\+\_\+form\+\_\+t}
+\item 
+static enum \hyperlink{namespacecrunchy_ad63d9cf0dc471a6e9379c12cd89fb5a9}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E} \hyperlink{namespacecrunchy_aae55d30a37cf91c7ece1e1bd5362b884}{crunchy\+::\+E\+F\+L\+A\+G\+\_\+\+P\+A\+G\+E\+\_\+\+T}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Temporary data file. 
+
+This contains code to modify, create and delete temporary data. \begin{DoxyAuthor}{Author}
+Corbin Matschull 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1r4 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Aug 30. 2015 
+\end{DoxyDate}
+\begin{DoxyPrecond}{Precondition}
+Make sure you have G\+N\+U G\+C\+C or L\+L\+V\+M to compile, B\+S\+D or V\+C\+C won\textquotesingle{}t compile. 
+\end{DoxyPrecond}
+\begin{DoxyWarning}{Warning}
+Make sure you run with admin/root privilages or this will fail 
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Check} & your Privilage Exception\+S \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_tempdata_8h_a6f3bff4d272a479fbc524279fa96dc04}{}\index{Tempdata.\+h@{Tempdata.\+h}!A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E@{A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}}
+\index{A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E@{A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(malloc(p))}\label{_tempdata_8h_a6f3bff4d272a479fbc524279fa96dc04}
+
+
+Allocate a page size. 
+
+\begin{DoxyNote}{Note}
+Possibly inefficient? 
+\end{DoxyNote}
+\hypertarget{_tempdata_8h_a397bad41cea5764e925992017308a0cb}{}\index{Tempdata.\+h@{Tempdata.\+h}!D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E@{D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}}
+\index{D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E@{D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+A\+L\+L\+O\+C\+\_\+\+P\+A\+G\+E(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(free(p))}\label{_tempdata_8h_a397bad41cea5764e925992017308a0cb}
+
+
+Deallocate page. 
+
+\begin{DoxyNote}{Note}
+Use \char`\"{}\+Delete\char`\"{} instead? 
+\end{DoxyNote}
+\hypertarget{_tempdata_8h_abdf67564be04240324d5117426952ff0}{}\index{Tempdata.\+h@{Tempdata.\+h}!H\+A\+S\+\_\+\+C\+H\+E\+C\+K@{H\+A\+S\+\_\+\+C\+H\+E\+C\+K}}
+\index{H\+A\+S\+\_\+\+C\+H\+E\+C\+K@{H\+A\+S\+\_\+\+C\+H\+E\+C\+K}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{H\+A\+S\+\_\+\+C\+H\+E\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+A\+S\+\_\+\+C\+H\+E\+C\+K~0x1\+C}\label{_tempdata_8h_abdf67564be04240324d5117426952ff0}
+\hypertarget{_tempdata_8h_a5f9420f30a042de64ddd0531bc781e98}{}\index{Tempdata.\+h@{Tempdata.\+h}!H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K@{H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K}}
+\index{H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K@{H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+A\+S\+\_\+\+N\+O\+\_\+\+C\+H\+E\+C\+K~0x2\+C}\label{_tempdata_8h_a5f9420f30a042de64ddd0531bc781e98}
+\hypertarget{_tempdata_8h_aaf39fd3d34d47b76240ae83bdf7c3666}{}\index{Tempdata.\+h@{Tempdata.\+h}!M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N@{M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N}}
+\index{M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N@{M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+T\+E\+M\+P\+\_\+\+F\+I\+L\+E\+S\+\_\+\+O\+P\+E\+N~1}\label{_tempdata_8h_aaf39fd3d34d47b76240ae83bdf7c3666}
+\hypertarget{_tempdata_8h_a89290f416d5943a9c0e5dee71cefa92e}{}\index{Tempdata.\+h@{Tempdata.\+h}!P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C@{P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C}}
+\index{P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C@{P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+E\+V\+E\+N\+T\+\_\+\+L\+O\+C~0}\label{_tempdata_8h_a89290f416d5943a9c0e5dee71cefa92e}
+\hypertarget{_tempdata_8h_a307cfdceaee3f928855a22157a52a812}{}\index{Tempdata.\+h@{Tempdata.\+h}!P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N@{P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N}}
+\index{P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N@{P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+U\+T\+\_\+\+T\+H\+A\+T\+\_\+\+C\+O\+O\+K\+I\+E\+\_\+\+D\+O\+W\+N~0xc00ce}\label{_tempdata_8h_a307cfdceaee3f928855a22157a52a812}
+\hypertarget{_tempdata_8h_a5aaa3f0b7467b4e414b553cedbb6f2bc}{}\index{Tempdata.\+h@{Tempdata.\+h}!R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F@{R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F}}
+\index{R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F@{R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+A\+S\+T\+E\+D\+\_\+\+M\+Y\+\_\+\+B\+E\+E\+F~0xdeadbeef}\label{_tempdata_8h_a5aaa3f0b7467b4e414b553cedbb6f2bc}
+\hypertarget{_tempdata_8h_a7ab10fbd11f547292657ef7866c446e6}{}\index{Tempdata.\+h@{Tempdata.\+h}!T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H@{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H}}
+\index{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H@{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+V\+A\+R\+\_\+\+P\+A\+T\+H~\char`\"{}\%Home\+Path\%/.tmpvardtm.\+txt\char`\"{}}\label{_tempdata_8h_a7ab10fbd11f547292657ef7866c446e6}
+\hypertarget{_tempdata_8h_af66cdd64c4d0c558d4cb016c4e0d6694}{}\index{Tempdata.\+h@{Tempdata.\+h}!U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E@{U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E}}
+\index{U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E@{U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+N\+A\+R\+Y\+\_\+\+T\+Y\+P\+E~double}\label{_tempdata_8h_af66cdd64c4d0c558d4cb016c4e0d6694}
+\hypertarget{_tempdata_8h_ade53d16378ba9499fbf2384ad8b1b72e}{}\index{Tempdata.\+h@{Tempdata.\+h}!V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D@{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D}}
+\index{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D@{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D}!Tempdata.\+h@{Tempdata.\+h}}
+\subsubsection[{V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D~1\+U\+L}\label{_tempdata_8h_ade53d16378ba9499fbf2384ad8b1b72e}
+
+
+Default U\+I\+D for registry components. You can redefine this for any U\+I\+D you like just do\+: define V\+A\+R\+I\+A\+B\+L\+E\+\_\+\+D\+A\+T\+A\+\_\+\+U\+I\+D new\+U\+I\+D. 
+
