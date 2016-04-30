@@ -39,6 +39,7 @@ namespace crunchy
 // ------------------------------------------
 //      Paging References
 
+
 /**
  * @brief Paging system type. Used for creating a master paging system
  *
@@ -52,6 +53,7 @@ typedef struct
     CRUNCHY_UINT *ptr_id;
     CRUNCHY_STRING virtualUID;
 } pgs_t;
+
 
 /**
  * @brief PRP (Public Return Prototypes), typenames for PRP keys.
@@ -71,6 +73,7 @@ struct has_prp_int
     std::vector<int> crnHasNotInt;
 } has_prp_int_t;
 
+
 /**
  * @brief CRN (Constant Return Numbers), use these for returning constant value ID's
  */
@@ -83,8 +86,10 @@ struct crn
 #if defined(HAS_STATIC_REFERENCE)
 #   define  PAGING_REFERENCES 24
 #   define  STATIC_REFERENCE_CHECK_STR "NULL"
-#   define  HAS_CORRECT_KEY "Key Check Ok"
+#   define  HAS_CORRECT_KEY "KeyCheckOk = TRUE"
 #endif
+
+
 
 // ==========================================
 // ------------------------------------------
@@ -94,9 +99,9 @@ struct crn
 /// @param crnID - Default Session ID
 void crn(CRUNCHY_UINT*, const CRUNCHY_STRING crnID);
 
-void createCRNData();
-
+void  createCRNData();
 DWORD hasCRNInstance();
+
 
 /**
  * @brief Contains prototypes to create virtual shell instances
@@ -104,10 +109,12 @@ DWORD hasCRNInstance();
 class Virtual
 {
     public:
+
         // Only use these for internal changes to the Virtual class
         int *vReference;
         bool hasVirtualReference;
         static int *stack_t;
+
 
         /**
          * @param prp_int_t - Accessor to has_prp_int

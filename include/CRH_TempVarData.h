@@ -47,6 +47,7 @@
 // 1 - TRUE
 #   define  PREVENT_LOC 0
 
+
 /**
  * \brief Default UID for registry components.
  *        You can redefine this for any UID you like just do:
@@ -74,6 +75,7 @@ struct tmp_dt
     static std::string tmp_reg_str;
 };
 
+
 /**
  * \brief Main Crunchylib Namespace
  */
@@ -86,11 +88,13 @@ namespace crunchy
      */
     namespace paging
     {
+
         /**
          * \brief Allocate a page size
          * \note Possibly inefficient?
          */
         #define ALLOC_PAGE(p) (malloc(p))
+
 
         /**
          * \brief Deallocate page
@@ -99,7 +103,9 @@ namespace crunchy
         #define DEALLOC_PAGE(p) (free(p))
 
 
+        #define _Is_Nil_Aligned_Key_(_GSRC)
     }
+
 
     /**
      * \brief Primary ms5 hashtable data memebers
@@ -112,6 +118,7 @@ namespace crunchy
         unsigned int ms5_portablekey;
         std::string ms5_usablename;
     } ms5_hash_t;
+
 
     /**
      * \brief Content keys for keeping content strings in handy containers.
@@ -131,6 +138,7 @@ namespace crunchy
         // Keeps keys in storage box
         DWORD64 content_box[64];
     } CONTENT_KEYS, *_CONTENT_KEYS_P;
+
 
     /**
      * \brief type forms, checks for unary significance.
@@ -190,6 +198,8 @@ class Register
                           int objectsToPromise
                          ){ return this; };
 
+
+
         // ===================================
         // -----------------------------------
         //      Component Registry
@@ -204,6 +214,8 @@ class Register
          * \return Nothing
          */
         void runt(tmp_dt* tmpd, ...);
+
+
 
         /**
          * \brief Main registry function for this file, this generates a default UID (if none is specified)
@@ -226,6 +238,7 @@ class Register
                                 DWORD keySizeUID
                                );
 
+
         /**
          * \brief Deregisters component based upon component UID
          * \brief This will check if component is currently active or running, if TRUE; will throw error.
@@ -245,6 +258,7 @@ class Register
                                   DWORD keyLen,
                                   std::string path = TEMPVAR_PATH
                                  );
+
 
         /**
          * \param crc_sign - CRC key

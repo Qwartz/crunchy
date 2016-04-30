@@ -5,7 +5,7 @@
 * \author Corbin Matschull
 * \version 2
 * \date Aug 31. 2015
-* \pre Make sure you have GNU GCC or LLVM to compile, BSD or VCC won't compile.
+* \pre Make sure you have GNU GCC or LLVM to compile, BSD won't compile.
 * \throws CANNOT_CREATE_COMPONENT_EXCEPTION
 */
 #include <Windows.h>
@@ -23,3 +23,13 @@ class forwardIdem;
 template<class T, class ForwardAtomic>
 class AtomicSet;
 
+
+
+class InlineDelegate
+{
+
+    public:
+
+        
+
+};

@@ -13,22 +13,29 @@
 #include <Windows.h>
 #include <iostream>
 #include <array>
+
+
 namespace crunchy
 {
+
 template <typename T, unsigned S>
 inline unsigned arraysize(const T(&v)[S]) { return S; }
 
+
 #   define  DEFAULT_GENERATED_UID 1UL
+
 
 /**
  * \brief Use as post argument define in function if current shell environment will not have a process subroutine attached to itself
  */
 #   define  _SHELL_ENV_HAS_NO_PROCESS
 
+
 /**
  * \brief Use this for explicit signature functions
  */
 #   define  _PSEUDO_SIGN void
+
 
 /**
  * \brief Use this for explicit pseudo signs
@@ -46,6 +53,7 @@ struct pseudo
 #   define  _SHELL_ENV_CALL_PROCESS  0xC000001D
 #   define  _SHELL_ENV_STACK_PROCESS 0xC000001E
 #   define  _SHELL_ENV_FORCE_PROCESS 0xC000001F
+
 
     /**
      * \brief No set types structure.
@@ -65,6 +73,7 @@ struct pseudo
         unsigned long nset_large_page;
     }NSET_T, *P_NSET_T;
 
+
     /**
      * \brief This is used for creating signatures to verify objects, components and file against a master server.
      */
@@ -75,6 +84,7 @@ struct pseudo
             // -------------------------------
             //      Signature Constructs
 
+
             /**
              * \brief Constructor
              * \param nilset - Access shell environment flags
@@ -82,15 +92,18 @@ struct pseudo
              */
             Signatures(nset_t *nilset, int _SHELL_PROC);
 
+
             /**
              * \brief Deconstructor
              * \brief Deletes all signatures upon call
              */
             virtual ~Signatures();
 
+
             // ===================================
             // -----------------------------------
             //      Pseudo Signature Prototypes
+
 
             /**
              * \param ta - Time Alive ~ How long to keep the process alive
@@ -102,6 +115,7 @@ struct pseudo
              */
             _PSEUDO_SIGN runproc(float ta, static int PSEUDO_UID = 1UL);
 
+
             /**
              * \param TLA - Time Left Alive
              * \param PSEUDO_UID - Default Pseudo ID from "runproc"
@@ -110,6 +124,7 @@ struct pseudo
              */
             _PSEUDO_SIGN deleteproc(float TLA,static int PSEUDO_UID = 1UL) _SHELL_ENV_HAS_NO_PROCESS;
 
+
             /**
              * \brief Creates self signing signature for running through heuristics engine.
              *
@@ -117,6 +132,7 @@ struct pseudo
              */
             void *create_self_signature(static long idt);
     };
+
 
     /**
      * \brief Creates explicit signature for piping methods

@@ -8,25 +8,30 @@
 #pragma once
 #include <Windows.h>
 #include "CRH_Signatures.h"
+
 namespace crunchy
 {
     // =====================================
     // -------------------------------------
     //        FORWARD DECLARATION
 
+
     /// @brief LLVM/Clang friendly BEGIN & END UNIX_Portable namespace
 #   define  UNIX_NAMESPACE_BEGIN namespace UNIX_Portable {
 #   define  UNIX_NAMESPACE_END }
 
+
     /// @brief LLVM/Clang friendly BEGIN & END WIN_Portable namespace
 #   define  WIN_NAMESPACE_BEGIN namespace WIN_Portable {
 #   define  WIN_NAMESPACE_END }
+
 
     /// @brief UNIX/Linux portable code
     namespace UNIX_Portable
     {
         bool hasUNIXEnv = true;
         bool hasWINEnv  = false;
+
 
         /**
          * \brief This holds environment sizes
@@ -41,6 +46,7 @@ namespace crunchy
             typedef long        env32_t;
             typedef short       env16_t;
         } ENV_DATA_T, *PENV_DATA_T;
+
 
         /**
          * \brief Creates empty shell environment and initializes a thread for it.
